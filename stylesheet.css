@@ -1,0 +1,1464 @@
+/*
+  $Id: stylesheet.css 1739 2007-12-20 00:52:16Z hpdl $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+html {
+  margin: 0px;
+  padding:0px;
+
+}
+
+
+body {
+background: url(images/back-body.jpg) center -4px no-repeat;
+/*#background: transparent  url(images/back-body-ie.png) center -4px no-repeat;*/
+color: #222;
+  margin: 0px;
+  padding:0px;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:100%;
+  
+}
+
+
+.main {
+width:960;
+margin:0 auto;
+text-align:left}
+
+.main b {
+color:#D72006;
+font-size:14px
+}
+
+.wrapper {
+	width:960px;
+	margin:0 auto;
+	background:#fff;
+	position:relative
+	}
+.header { 
+background:transparent url(images/banners/bg-warpper-1.png) center 15px  no-repeat;}
+
+/****************/
+/*	 FOOTER     */ 
+/****************/
+
+.footer {
+	height:100px !important;
+	width:100%;
+	margin:0 auto;
+	color:#fff;
+	position:relative;
+	background: url(bgfooterx.gif) repeat-x center top;
+#background: url(bgfooterx.gif) repeat-x center top;
+	}
+
+A {
+  color: #000000;
+  text-decoration: none;
+}
+
+A:hover {
+  color: #AABBDD;
+  text-decoration: underline;
+}
+
+FORM {
+	display: inline;
+	#padding:5px
+}
+
+
+
+
+/****************/
+/*	TOP MENU	*/ 
+/****************/
+
+
+#TopMenu {	
+	width:960px;
+	margin:0 auto;
+	padding:0;
+	height:40px;
+	
+	}
+
+.Logo {
+	float:left;
+	
+	}
+.Logo h1 {
+background:none;
+padding:0;
+margin:5px 0 0 0;
+}
+
+.UserMenu {
+	float:right;
+	margin:0;
+	text-align:right;
+	
+
+	
+	}
+
+.UserMenu {
+  	color:#555;
+	font-size:11px;
+	font-family:Geneva, Arial, Helvetica, sans-serif
+	}
+
+.UserMenu a {
+  	color:#555;
+	font-size:12px;
+	}
+
+.UserMenu a:hover {
+  	color: #669900;
+	font-size:12px;
+	}
+.UserMenu form {
+float:right;
+line-height:10px
+}
+
+.AdvancedSearch b  a{font-size:11px;
+}
+/*fin usermenu*/
+
+
+
+/****************/
+/*	MAIN MENU	*/ 
+/****************/
+
+#MainMenu {
+	width:100%;
+
+	margin:59px 0 0 0;
+	#margin:6px 0 0 0;
+	height:37px;
+	z-index:999 !important; 
+	
+	}
+
+.Navigation {
+	float:left;
+	height:37px;
+	padding: 0 
+	}
+
+/*fin mainmenu */
+.boxText 
+{ 
+font-family: Verdana, Arial, sans-serif; 
+font-size: 11px; 
+color:#333;
+ }
+
+.boxText ul li{
+list-style-type:none;
+}
+.boxText ul {
+padding-left:0
+}
+
+.errorBox { font-family : Verdana, Arial, sans-serif; font-size : 10px; background: #ffb3b5; font-weight: bold; }
+.stockWarning { font-family : Verdana, Arial, sans-serif; font-size : 10px; color: #cc0033; }
+.productsNotifications { background: #f2fff7; }
+.orderEdit { font-family : Verdana, Arial, sans-serif; font-size : 10px; color: #70d250; text-decoration: underline; }
+
+TR.header {
+   height:80px
+}
+
+TR.headerNavigation {
+ 
+  height:46px
+}
+
+
+
+TD.headerNavigation {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  
+  color: #ffffff;
+  font-weight : bold;
+}
+
+A.headerNavigation { 
+  color: #FFFFFF; 
+}
+
+A.headerNavigation:hover {
+  color: #ffffff;
+}
+
+.breadcrumb a{color:#333333; font-size:11px !important; }
+.breadcrumb a:hover{color: #FF6600; font-family:11px !important; text-decoration:underline}
+
+TR.headerError {
+  background: #ff0000;
+}
+
+TD.headerError {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #ff0000;
+  color: #ffffff;
+  font-weight : bold;
+  text-align : center;
+}
+
+TR.headerInfo {
+  background: #00ff00;
+}
+
+TD.headerInfo {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #00ff00;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.infoBoxContents {
+  /*background: #ffffff;*/
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+
+}
+
+.infoBoxNotice {
+  background: #FF8E90;
+}
+
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+TD.infoBoxHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background: url(images/bg-td-infobox.gif) 0 0 repeat-x ;
+  color: #fff;
+  text-shadow:#D72006  -1px -1px;
+  text-align:center
+}
+
+TD.infoBox, SPAN.infoBox {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+TR.accountHistory-odd, TR.addressBook-odd, TR.alsoPurchased-odd, TR.payment-odd, TR.productListing-odd, TR.productReviews-odd, TR.upcomingProducts-odd, TR.shippingOptions-odd {
+  background: #f8f8f9;
+}
+
+TR.accountHistory-even, TR.addressBook-even, TR.alsoPurchased-even, TR.payment-even, TR.productListing-even, TR.productReviews-even, TR.upcomingProducts-even, TR.shippingOptions-even {
+  background: #f8f8f9;
+}
+
+TABLE.productListing {
+  border: 1px;
+  border-style: solid;
+  border-color: #FFF;
+  border-spacing: 1px;
+}
+
+.productListing-heading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #FF602D;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+TD.productListing-data {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+
+A.pageResults {
+  color: #0000FF;
+}
+
+A.pageResults:hover {
+  color: #0000FF;
+  background: #FFFF33;
+}
+
+TD.pageHeading, DIV.pageHeading {
+  font-family:  Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  text-decoration:none;
+  vertical-align: middle
+}
+
+TR.subBar {
+  background: #f4f7fd;
+}
+
+TD.subBar {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #000000;
+}
+
+TD.main, P.main {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+
+}
+
+TD.smallText, SPAN.smallText, P.smallText {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+TD.accountCategory {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  color: #aabbdd;
+}
+
+TD.fieldKey {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+TD.fieldValue {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+
+TD.tableHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+SPAN.newItemInCart {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  color: #ff0000;
+}
+
+CHECKBOX, INPUT, RADIO, SELECT {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TEXTAREA {
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+SPAN.greetUser {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #6C377F;
+  font-weight: bold;
+}
+
+TABLE.formArea {
+  background: #f1f9fe;
+  border-color: #7b9ebd;
+  border-style: solid;
+  border-width: 1px;
+}
+
+TD.formAreaTitle {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+SPAN.markProductOutOfStock {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #c76170;
+  font-weight: bold;
+}
+
+SPAN.productSpecialPrice {
+  font-family: Verdana, Arial, sans-serif;
+  color:#FF6600;
+ 
+}
+
+SPAN.errorText {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+.moduleRow { }
+.moduleRowOver { background-color: #D7E9F7; cursor: pointer; cursor: hand; }
+.moduleRowSelected { background-color: #E9F4FC; }
+
+.checkoutBarFrom, .checkoutBarTo { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #8c8c8c; }
+.checkoutBarCurrent { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; }
+
+/* message box */
+
+.messageBox { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.messageStackError, .messageStackWarning { font-family: Verdana, Arial, sans-serif; font-size: 10px; background-color: #ffb3b5;  display:none }
+.messageStackSuccess { font-family: Verdana, Arial, sans-serif; font-size:22px; background-color:#690; color:#FFF }
+
+/* input requirement */
+
+.inputRequirement { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #ff0000; }
+
+
+/* CLASES ANGEL */ 
+.bg-nav {
+	height:35px;
+	width:100%;
+	}
+
+.bg-nav a {
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	}
+
+
+  .headerCategoriesItems { 
+    white-space: nowrap;
+	background: none;
+	margin-right:1px;
+	 padding-top:15px ;
+	  padding-bottom:15px ; 
+	height:47px
+     
+  }
+  
+  .headerCategoriesItems a { 
+  color: #fff;  
+  height:47px; 
+  padding:15px; 
+  }
+  
+  .headerCategoriesItems a:hover { 
+  color: #fff; 
+  background: url(images/bg_menu.gif) no-repeat center bottom; 
+  height:47px; 
+  padding:15px; 
+  text-decoration:none 
+  }
+  
+
+ .breadcrumb {
+ 	margin-left:20px
+	}
+
+.bg-search {
+ background:url(images/bg-search.gif) no-repeat 0px 13px;
+ width:160px;
+ height:28px
+ }
+
+/****************/
+/*	SLIDESHOW	*/ 
+/****************/
+
+
+/***********************************************
+
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+
+* This notice must stay intact for legal use
+
+***********************************************/
+
+#SlideShow {
+ width:960px;
+ height:350px;
+ margin:0px auto;
+ background:url(images/bg_slide.jpg);
+
+ }
+
+.stepcarousel{
+position: relative; /*leave this value alone*/
+/*border: 1px solid black;*/
+overflow: scroll; /*leave this value alone*/
+width: 100%; /*Width of Carousel Viewer itself*/
+height: 350px; /*Height should enough to fit largest content's height*/
+margin:0 auto
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin:0px; /*margin around each panel*/
+width:960px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+
+}
+
+#mygallery{
+overflow: hidden;
+}
+
+#mygallery-paginate {
+width:80px;
+margin:0 auto !important;
+#margin-left:450px}
+
+/***********************************************
+
+* lightbox
+
+***********************************************/
+
+#lightbox{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(images/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(images/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%	
+	}
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	}
+	
+
+.top1 {
+	background: url(images/infobox/bg_top_ventas_1.png) center left no-repeat;
+	padding-left:25px
+	}
+.top2 {
+	background: url(images/infobox/bg_top_ventas_2.png) center left no-repeat;
+	padding-left:25px
+	}
+.top3 {
+	background: url(images/infobox/bg_top_ventas_3.png) center left no-repeat;
+	padding-left:25px
+	}
+.top4 {
+	background: url(images/infobox/bg_top_ventas_4.png) center left no-repeat;
+	padding-left:25px
+	}
+.top5 {
+	background: url(images/infobox/bg_top_ventas_5.png) center left no-repeat;
+	padding-left:25px
+	}
+	
+
+
+
+/****************/
+/*	 FOOTER     */ 
+/****************/
+
+	
+/* nuevos*/
+.smallText span {
+	font-size:.80em;
+	margin-top:-5px;
+	color:#8908ab
+	}
+
+.smallText strong {
+	font-size:1.2em
+	}
+
+.smallTextRow {
+	background:#FAEFFF
+	}
+
+ 
+.infoBox {
+ width:180px
+}
+
+
+
+.infoBoxNotice {
+  background: #FF8E90;
+}
+
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.offerInfoUpcomming {
+	float:left;
+	width: 300x;
+	height: 95px;
+	line-height:2em
+	}
+
+	
+.offerInfo  strong {
+	font-size:.85em;
+	 text-align:left;
+	 text-transform:uppercase;
+
+	}
+
+.offerInfo  strong span {
+	font-weight:normal;
+	margin-left:3px;
+	text-decoration:line-through;
+	display:none
+	}
+
+.offerInfo span strong {
+	font-weight:bold;
+	margin-left:3px;
+	text-decoration:none;
+	font-size:1em;
+	color:#e13110;
+	float:left;
+	text-align:left
+	}
+.seminuevos  {
+	width:100%;
+	text-align:left;
+	float:left;
+	padding:0;
+	margin:0;
+	display:inline
+}
+
+
+
+.seminuevos  table {
+	text-align:left
+}
+
+
+.accessories {
+	overflow:auto;
+	text-align:center;
+	width:460px
+}
+
+h1 {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#9F7EA9 none repeat scroll 0 0;
+color:#FFFFFF;
+font-size:1.3em;
+line-height:1em;
+margin-bottom:0.3em;
+padding:5px 0 5px 10px;
+text-shadow:#6C377F -1px -1px
+}
+
+
+.infoBox .boxtext {
+  background: transparent url(images/infobox/bg_small.gif) no-repeat center bottom;
+  width:100% !important;
+  padding-bottom: 10px
+}
+
+.infoBox .boxtext a {
+text-transform:capitalize;
+line-height:1.2em;
+font-size:12px;
+font-weight:normal;
+}
+
+
+
+#centercol .infoBoxContents {
+
+background: none !important;
+padding-bottom:0px;
+width:500px;
+font-size:20px;
+font-weight:bold;
+color:#333333
+
+}
+
+#centercol .infoBoxContents img {
+margin:10px 0 5px 0;
+
+}
+
+#centercol .infoBoxContents a {
+font-size:12px  !important;
+padding:5px 0 10px 0;
+color:#222;
+font-weight:bold;
+text-transform:capitalize
+}
+
+/* NOVEDADES */
+
+.xbox-new {
+	background:url(images/icons/xbox-new.gif) 0 0 no-repeat;
+}
+
+.wii-new {
+	background:url(images/icons/wii-new.gif) 0 0 no-repeat;
+}
+
+.ps3-new {
+	background:url(images/icons/ps3-new.gif) 0 0 no-repeat;
+}
+
+.pc-new {
+	background:url(images/icons/pc-new.gif) 0 0 no-repeat;
+}
+
+.psp-new {
+	background:url(images/icons/psp-new.gif) 0 0 no-repeat;
+}
+
+
+.nds-new {
+	background:url(images/icons/nds-new.gif) 0 0 no-repeat;
+}
+
+.ps2-new {
+	background:url(images/icons/ps2-new.gif) 0 0 no-repeat;
+	}
+
+
+.xbox-new, .wii-new, .ps3-new,.pc-new,.psp-new, .nds-new, .ps2-new  
+{
+	width:100px;
+	height:30px;
+	display:block;
+	padding:0 0 5px 0;
+	margin:15px 0 0 0	
+}
+
+
+/* MENU */ 
+
+.menu{
+	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	z-index:999999 !important
+	}
+.menu ul{
+	background:#572567;
+	height:35px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+	.menu li{
+		float:left;
+		padding:0px;
+		}
+	.menu li a{
+		background:#572567 url("images/seperator.gif") bottom right no-repeat;
+		color:#ffffff;
+		display:block;
+		font-weight:normal;
+		line-height:35px;
+		margin:0px;
+		padding:0px 24px;
+		text-align:center;
+		text-decoration:none;
+		}
+		.menu li a:hover, .menu ul li:hover a{
+			background: #FF602D url("images/hover.gif") bottom center no-repeat;
+			color:#FFFFFF;
+			text-decoration:none;
+			}
+	.menu li ul{
+		background:#572567;
+		display:none;
+		height:auto;
+		padding:0px;
+		margin:0px;
+		border:0px;
+		position:absolute;
+		width:120px;
+		z-index:200;
+		/*top:1em;
+		/*left:0;*/
+		}
+	.menu li:hover ul{
+		display:block;
+		
+		}
+	.menu li li {
+		background:url('images/sub_sep.gif') bottom left no-repeat;
+		display:block;
+		float:none;
+		margin:0px;
+		padding:0px;
+		width:120px;
+		}
+	.menu li:hover li a{
+		background:none;
+		
+		}
+	.menu li ul a{
+		display:block;
+		height:35px;
+		font-size:12px;
+		font-style:normal;
+		margin:0px;
+		padding:0px 10px 0px 15px;
+		text-align:left;
+		}
+		.menu li ul a:hover, .menu li ul li:hover a{
+			background:#FF602D url('images/hover_sub.gif') center left no-repeat;
+			border:0px;
+			color:#ffffff;
+			text-decoration:none;
+			}
+	.menu p{
+		clear:left;
+		}	
+
+		
+/* ++++++++++++++++++++++++++++++++++++++++++++++++*/
+/****************/
+/*	SLIDESHOW - ACCESSORIES	*/ 
+/****************/
+
+
+/***********************************************
+
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+
+* This notice must stay intact for legal use
+
+***********************************************/
+
+#SlideShowAccessories {
+ width:540px;
+ height:200px;
+ margin:0px auto;
+ background: url(images/infobox/bg-big-ccol.gif) center bottom no-repeat;
+ border-top:1px solid #fff;
+ font
+ }
+
+.panelAccessories td {
+font-family: Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold
+}
+
+
+.panelAccessories td strong {
+	line-height:2em;
+	font-size:14px;
+	color:#333333
+}
+.stepcarouselAccessories{
+position: relative; /*leave this value alone*/
+overflow: scroll; /*leave this value alone*/
+width: 450px;
+#left:45px; /*Width of Carousel Viewer itself*/
+height: 195px; /*Height should enough to fit largest content's height*/
+margin:0 auto;
+
+}
+
+.stepcarouselAccessories .beltAccessories{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarouselAccessories .panelAccessories{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin:0 5px 0 0; /*margin around each panel*/
+width:110px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+text-align:center;
+line-height:1.5em
+
+}
+
+
+
+#mygalleryAccessories{
+overflow: hidden;
+}
+
+
+
+
+/****************/
+/*	MAINCONTENT	*/ 
+/****************/
+
+TD.main, P.main {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+
+}
+
+.boxText { 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px; color:#333;
+	margin-top:5px;
+	padding:0;
+	line-height:2em;
+	
+	}
+
+TD.tableHeading {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:1em;
+  padding-bottom:10px
+  }
+
+TD.smallText, SPAN.smallText, P.smallText {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: .75em;
+  padding:5px 10px 10px 0
+}
+
+
+.smallText a
+{
+color:#333;
+text-decoration:none}
+
+.smallText a:hover
+{
+color:#B100BF}
+
+.smallText span {
+	font-size:.80em;
+	margin-top:-5px;
+	color:#8908ab
+	}
+	
+.smallText small {
+
+}
+
+.smallText strong {
+	font-size: 14px;
+font-weight: bold;
+color: #000000;;
+font-family:Arial, Helvetica, sans-serif
+	}
+
+.smallTextRow {
+	background:#FAEFFF
+	}
+
+
+.infoBox {
+  /*background:  url(images/infobox/bg.gif) no-repeat center bottom;*/
+}
+
+.infoBoxContents {
+  
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:.9em;
+  border-top:1px solid #ffffff;
+}
+
+.infoBoxNotice {
+  background: #FF8E90;
+}
+
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+
+.bestSellers li {
+border-bottom:1px solid #f1f1f1;
+padding:4px 0 4px 0
+}
+
+.bestSellers  span  {
+color:#FF0000;
+font-weight:bold;
+font-size:14px
+
+}
+.bestSellers .offerImg {
+	float:left;
+	width: 70px;
+	#height: 95px;
+	#padding-left:25px;
+	padding-left:20px;
+	text-align:right	
+	}
+	
+.bestSellers .offerInfo {
+	float:right;
+	width: 55px;
+	margin-left:5px;
+	line-height:1.5em;
+	#line-height:.8em;
+	font-family: Arial, Helvetica, sans-serif;
+   font-size:12px;
+   font-weight:bold;
+
+	}
+
+
+
+.offerImg {
+	float:left;
+	width:  40%;
+	height: 95px;
+	#margin-left:-5px;
+	
+	
+	}
+
+.offerInfo {
+	float:right;
+	width: 50%;
+	#width:50%;
+	line-height:1.5em;
+	#line-height:.8em;
+	font-family: Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold
+	}
+
+.offerInfoUpcomming {
+	float:left;
+	width: 300x;
+	height: 95px;
+	line-height:2em
+	}
+
+.offerInfo small {
+	height:14px;
+	width:44px;
+	}
+	
+.offerInfo  strong {
+	font-size:12px;
+	 text-align:left;
+	 text-transform:capitalize;
+	 color:#333333;
+	 padding:0;
+	 margin:0;
+	 font-weight:normal
+	}
+
+
+.offerInfo span  {
+	font-weight:bold;
+	margin-left:3px;
+	text-decoration:none;
+	font-size:1em;
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:2em
+	}
+
+
+.offerInfo .productSpecialPrice {
+	font-size:14px;
+	color: #FF0000
+}
+.consoleType {
+	border-bottom:1px solid #f1f1f1;
+	padding:5px 0 5px 0
+	}
+	
+.consoleType .offerImg {
+padding:0
+}
+
+.boxText ul {
+padding:0;
+margin:0;
+width:100%;
+text-align:left
+}
+
+
+.upcomingDate {
+	background:url(images/bg-data.png) center top no-repeat;
+	padding:5px 0;
+	color:#FFFFFF !important;
+	font-weight:bold;
+	font-size:12px;
+	
+	}
+
+.upcommingProducts {
+	text-align:center;
+	height:auto; !important
+	min-height:200px;
+	height:200px;
+	}
+
+.upcommingProducts .infobox  {
+width:100%
+}
+
+.upcommingProducts img {
+	padding:3px
+	}
+
+.upcommingProducts strong {
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+	line-height:1.5em
+	}
+
+.upcommingProducts a {
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+	line-height:1.5em;
+	
+	}
+	
+.upcommingProducts strong small {
+	font-size:14px;
+	font-weight:bold;
+	color:#000;
+
+	}
+
+.upcommingProducts span {
+	font-size:12px;
+	padding:3px;
+	color:#333;
+	margin:0 0 10px 0;
+	text-align:center;
+	
+	
+	}
+
+.upcommingProductsVerMas{
+	padding:10px;
+	text-align:right;
+	font-size:12px;
+	border-top:1px dotted #fff
+}
+.accessories {
+	overflow:auto;
+	text-align:center;
+	width:460px
+}
+
+.xbox-new {
+	background:url(images/icons/xbox-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.wii-new {
+	background:url(images/icons/wii-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.ps3-new {
+	background:url(images/icons/ps3-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.pc-new {
+	background:url(images/icons/pc-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.psp-new {
+	background:url(images/icons/psp-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+
+.nds-new {
+	background:url(images/icons/nds-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.ps2-new {
+	background:url(images/icons/ps2-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+
+.top1 {
+	background: url(images/infobox/bg_top_ventas_1.png) center left no-repeat;
+	padding-left:25px
+	}
+.top2 {
+	background: url(images/infobox/bg_top_ventas_2.png) center left no-repeat;
+	padding-left:25px
+	}
+.top3 {
+	background: url(images/infobox/bg_top_ventas_3.png) center left no-repeat;
+	padding-left:25px
+	}
+.top4 {
+	background: url(images/infobox/bg_top_ventas_4.png) center left no-repeat;
+	padding-left:25px
+	}
+.top5 {
+	background: url(images/infobox/bg_top_ventas_5.png) center left no-repeat;
+	padding-left:25px
+	}
+	
+
+
+	
+/****************/
+/*	 MISC      */ 
+/****************/
+
+a {
+color: #000000;
+text-decoration: none;
+}
+
+a:hover
+{
+color: #9200BF;
+text-decoration: underline;
+}
+
+.clearleft {
+	clear:left
+	}
+
+.clearfix {
+	clear:both
+	}
+	
+textarea,
+input[type='text'], 
+input[type='password'],
+select {
+	border: 1px #666666 solid;
+	padding: 0 1px 1px 1px;
+}
+
+textarea:focus,
+input[type='text']:focus, 
+input[type='password']:focus,
+select:focus {
+	border-color: #000;
+	outline: 2px solid #fec707;
+	color:#000
+}
+
+
+
+.bloquenovedades {
+	text-align:center;
+	height:150px
+}
+
+.bloquenovedades a {
+font-size:12px;
+color:#333333
+
+}
+
+.novedadestable {
+width:120px !important}
+
+.hide {
+display:none}
+
+
+.reviews{
+	text-transform: none !important; font-size:11px !important;}
+	
+.reviews a{
+	text-transform: none; font-size:11px; padding:0 5px
+}
+
+#listaAccesorios {
+font-size:10px !important;
+text-transform: capitalize !important;
+
+}
+#facebox {
+	/* overlay is hidden before loading */
+	display:none;
+	/* standard decorations */
+	width:800px;
+	border:10px solid #666;
+	/* for modern browsers use semi-transparent color on the border. nice! */
+	border:10px solid rgba(82, 82, 82, 0.698);
+	/* hot CSS3 features for mozilla and webkit-based browsers (rounded borders) */
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	background:#000
+}
+
+#facebox div {
+	/*padding:10px;*/
+	/*border:1px solid #3B5998;*/
+	background: #fff /*url(images/gamer.png) -30px 65px no-repeat*/;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif
+}
+
+#facebox h2 {
+	margin:-11px;
+	margin-bottom:0px;
+	color:#fff;
+	background-color:#fe0000;
+	/*padding:5px 10px;*/
+	/*border:1px solid #3B5998;*/
+	font-size:20px;
+}
+
+#facebox p {
+padding-left:50px
+}
+
+button.close {
+background:#333;
+color:#fff;
+border:1px solid #111
+} 
+
+.left {
+padding-left:0;
+width:180px}
+.center {
+padding-left:180px;
+width:560px}
+.right {
+width:180px;
+padding-left:740px}

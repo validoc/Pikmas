@@ -1,0 +1,950 @@
+@charset "utf-8";
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	/*addclass*/
+		background:  url(images/banners/back-body.gif) 0 150px no-repeat;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:100%
+}
+
+html {
+background: url(images/bg_body.png) 0 0 repeat-x;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************/
+/*	TYPOGRAPHY	*/ 
+/****************/
+h1 {
+	font-size:1.3em;
+	color:#777;
+	background: url(images/bg-h1.png) center top no-repeat;
+	padding:10px 0 8px 10px;
+	line-height:1em;
+	margin-bottom:.3em;
+	border-bottom: 1px solid #CFCFCF;
+	text-shadow: #fff -.02em -.03em /* red -2px -2px */
+
+	}
+
+strong { 
+	color:#572567;
+	}
+
+/****************/
+/*	TOP MENU	*/ 
+/****************/
+#TopMenu {	
+	width:960px;
+	margin:0 auto;
+	padding:10px
+	}
+
+.Logo {
+	float:left;
+	margin:15px 0 0 0;
+	}
+
+.UserMenu {
+	float:right;
+	margin:5px 0;
+	text-align:right
+	
+	
+	}
+
+.UserMenu {
+  	color:#555;
+	font-size:11px;
+	font-family:Geneva, Arial, Helvetica, sans-serif
+	}
+
+.UserMenu a {
+  	color:#555;
+	font-size:12px;
+	}
+
+.UserMenu a:hover {
+  	color: #669900;
+	font-size:12px;
+	}
+
+/****************/
+/*	MAIN MENU	*/ 
+/****************/
+
+#MainMenu {
+	width:960px;
+	margin:0 auto;
+	height:36px;
+	z-index:999999; !important 
+	
+	}
+
+.Navigation {
+	float:left;
+	height:36px;
+	padding: 0 
+	}
+
+/* ====================*/
+
+#info {height:400px;}
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/basic_dd.html
+Copyright (c) 2005-2009 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/* remove the bullets, padding and margins from the lists */
+.Navigation  .menu ul{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+/* make the top level links horizontal and position relative so that we can position the sub level */
+.Navigation  .menu li{
+float:left;
+position:relative;
+z-index:100;
+}
+
+.Navigation .menu ul li ul li {
+background:#3E0550;
+border-bottom:1px solid #fff;
+width:150px;
+text-align:left;
+padding-left:10px
+}
+
+.Navigation .menu ul li ul li:hover {
+background:#FF602D;
+}
+
+.Navigation .menu ul li ul {
+
+margin:-13px 0 0 7px
+}
+
+
+/* use the table to position the dropdown list */
+.Navigation  .menu table{
+position:absolute;
+border-collapse:collapse;
+z-index:80;
+left:-1px;
+top:25px;
+}
+
+/* style all the links */
+.Navigation  .menu a, .menu :visited {
+display:block;
+font-size:.80em;
+width:80px;
+padding:7px 6px 7px 1px;
+color:#fff;
+text-decoration:none;
+margin:0px;
+font-family:verdana, sans-serif;
+}
+/* style the links hover */
+.Navigation  .menu :hover{
+color:#fff;
+}
+
+
+.xbox-nav {
+	background:transparent url(images/navegacion/xbox-off.png) no-repeat top center; width:70px;  height:36px	
+	} 
+		
+.xbox-nav:hover{
+	background:transparent url(images/navegacion/xbox-on.png) no-repeat top center;	
+	} 
+
+.wii-nav {
+	background:transparent url(images/navegacion/wii-off.png) no-repeat top center; width:70px; height:36px		
+	} 
+		
+.wii-nav:hover{
+	background:transparent url(images/navegacion/wii-on.png) no-repeat top center;	
+	} 
+
+
+.ps3-nav {
+	background:transparent url(images/navegacion/ps3-off.png) no-repeat top center; width:70px; height:36px	
+	} 
+		
+.ps3-nav:hover{
+	background:transparent url(images/navegacion/ps3-on.png) no-repeat top center;	
+	} 
+
+.pc-nav {
+	background:transparent url(images/navegacion/pc-off.png) no-repeat top center; width:70px; height:36px		
+	} 
+		
+.pc-nav:hover{
+	background:transparent url(images/navegacion/pc-on.png) no-repeat top center;	
+	} 
+
+.ds-nav {
+	background:transparent url(images/navegacion/nds-off.png) no-repeat top center; width:70px; height:36px	
+	} 
+
+.ds-nav:hover{
+	background:transparent url(images/navegacion/nds-on.png) no-repeat top center;	
+	} 
+
+.psp-nav {
+	background:transparent url(images/navegacion/psp-off.png) no-repeat top center; width:70px; height:36px	
+	} 
+		
+.psp-nav:hover{
+	background:transparent url(images/navegacion/psp-on.png) no-repeat top center;	
+	}
+	
+
+.ps2-nav {
+	background:transparent url(images/navegacion/ps2-off.png) no-repeat top center; width:70px; height:36px		
+	} 
+		
+.ps2-nav:hover{
+	background:transparent url(images/navegacion/ps2-on.png) no-repeat top center;	}
+	
+	
+.sn-nav {
+	background:transparent url(images/navegacion/sn-off.png) no-repeat top center; width:70px; height:36px		
+	} 
+		
+.sn-nav:hover{
+	background:transparent url(images/navegacion/sn-on.png) no-repeat top center;	}
+	
+
+.ac-nav {
+	background:transparent url(images/navegacion/ac-off.png) no-repeat top center; width:70px; height:36px		
+	} 
+		
+.ac-nav:hover{
+	background:transparent url(images/navegacion/ac-on.png) no-repeat top center;	}
+
+.ot-nav {
+	background:transparent url(images/navegacion/ot-off.png) no-repeat top center; width:70px; height:36px		
+	} 
+		
+.ot-nav:hover{
+	background:transparent url(images/navegacion/ot-on.png) no-repeat top center;	}
+
+
+.con-nav {
+	background:transparent url(images/navegacion/con-off.png) no-repeat top center; width:70px; height:36px		
+	} 
+		
+.con-nav:hover{
+	background:transparent url(images/navegacion/con-on.png) no-repeat top center;	}
+
+
+
+/* hide the sub level links */
+.Navigation  .menu ul ul {
+visibility:hidden;
+position:absolute;
+width:149px;
+height:0;
+}
+/* make the sub level visible on hover list or link */
+.Navigation  .menu ul li:hover ul,
+.menu ul a:hover ul{
+visibility:visible;
+}
+
+/* 
+
+ul#menu{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+	position:relative;
+	display:block;
+	height:80px;
+	text-transform:none;
+	font-size:13px;
+	background:transparent;
+	font-family:Helvetica,Arial,Verdana,sans-serif;
+}
+ul#menu li{
+	display:block;
+	float:left;
+	margin:0;
+	pading:0;
+	}
+ul#menu li a{
+	display:block;
+	float:left;
+	color:#ffffff;
+	text-decoration:none;
+	padding:30px 7px 0 5px;
+	height:50px;
+	}
+	
+
+	}*/
+	
+
+.Search {
+	text-align:right;
+	margin-left:20px;
+	padding:0 0 5px 0;
+	}
+
+.Search input[type='text'] {
+	width:100px;
+	font-size:1.5em
+	}
+
+.AdvancedSearch, .AdvancedSearch a  {
+	 margin:12px 18px 0 0;
+	 text-decoration:none;
+	 font-family:Arial, Helvetica, sans-serif
+	 }
+	 
+
+/****************/
+/*	SLIDESHOW	*/ 
+/****************/
+
+
+/***********************************************
+
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+
+* This notice must stay intact for legal use
+
+***********************************************/
+
+#SlideShow {
+ width:956px;
+ height:350px;
+ margin:0px auto;
+ /*background:url(images/bg_slide.jpg);*/
+ border-top:1px solid #fff
+ }
+
+.stepcarousel{
+position: relative; /*leave this value alone*/
+/*border: 1px solid black;*/
+overflow: scroll; /*leave this value alone*/
+width: 100%; /*Width of Carousel Viewer itself*/
+height: 350px; /*Height should enough to fit largest content's height*/
+margin:0 auto
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin:0px; /*margin around each panel*/
+width:956x; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+
+}
+
+#mygallery{
+overflow: hidden;
+}
+
+
+/****************/
+/*	SLIDESHOW - ACCESSORIES	*/ 
+/****************/
+
+
+/***********************************************
+
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+
+* This notice must stay intact for legal use
+
+***********************************************/
+
+#SlideShowAccessories {
+ width:460px;
+ height:240px;
+ margin:0px auto;
+ background: url(images/infobox/bg_big.gif) center bottom no-repeat;
+ border-top:1px solid #fff
+ }
+
+.stepcarouselAccessories{
+position: relative; /*leave this value alone*/
+/*border: 1px solid black;*/
+overflow: scroll; /*leave this value alone*/
+width: 400px; /*Width of Carousel Viewer itself*/
+height: 195px; /*Height should enough to fit largest content's height*/
+margin:0 auto;
+
+}
+
+.stepcarouselAccessories .beltAccessories{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarouselAccessories .panelAccessories{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin:0 5px 0 0; /*margin around each panel*/
+width:110px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+text-align:center;
+font-size:.80em;
+line-height:1.5em
+
+}
+
+#mygalleryAccessories{
+overflow: hidden;
+}
+
+
+
+
+/****************/
+/*	MAINCONTENT	*/ 
+/****************/
+#background-page {
+
+}
+
+#wrapper1 {
+	position:relative;
+	text-align:left;
+	width:960px;
+	margin:1px  auto;
+	
+	}
+#wrapper2 {
+	position:relative;
+	text-align:left;
+	width:960px;
+	
+	}
+
+#maincol {
+	position:relative;
+	margin:0;
+	padding:10px;
+	background: #fff;
+	height:auto;!important
+	
+	
+	}
+#leftcol { 
+	position:relative;
+	top:-10px;
+	left:-10px;
+	float:left;
+	width:220px;  /* for IE5/WIN */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:200px; /* actual value */
+	margin:0 0 -10px 0;
+	padding:10px;
+	z-index:100;
+	
+	
+	}
+#rightcol {
+	position:relative;
+	top:-10px;
+	right:-10px;
+	float:right;
+	width:220px;  /* for IE5/WIN */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:200px; /* actual value */
+	margin:0 0 -10px 0;
+	padding:10px;
+	z-index:99;
+
+	}
+#centercol {
+	position:relative;
+	padding:0 240px;
+	}
+
+.centercol {
+	background:url(images/infobox/bg_big.gif) center bottom no-repeat;
+	}
+
+TD.main, P.main {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+
+}
+
+.boxText { 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px; color:#333;
+	margin-top:5px;
+	padding:0;
+	line-height:2em;
+	
+	}
+
+TD.tableHeading {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:1em;
+  padding-bottom:10px
+  }
+
+TD.smallText, SPAN.smallText, P.smallText {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: .75em;
+  padding:0 0 10px 0
+}
+
+
+.smallText a
+{
+color:#333;
+text-decoration:none}
+
+.smallText a:hover
+{
+color:#B100BF}
+
+.smallText span {
+	font-size:.80em;
+	margin-top:-5px;
+	color:#8908ab
+	}
+	
+.smallText small {
+	display:none
+}
+
+.smallText strong {
+	font-size: 14px;
+font-weight: bold;
+color: #000000;;
+font-family:Arial, Helvetica, sans-serif
+	}
+
+.smallTextRow {
+	background:#FAEFFF
+	}
+
+.infoBoxHeading {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background: url(images/infobox/bg_infobxheading.gif) no-repeat 0 0 ;
+   padding:10px 0 0 10px;
+  text-transform:capitalize;
+  height:39px;
+  font-size: 1.3em;
+color: #777777;
+padding-top: 10px;
+
+padding-right: 0pt;
+
+padding-bottom: 8px;
+
+padding-left: 10px;
+
+line-height: 1em;
+
+margin-bottom: 0.3em;
+
+border-bottom-width: 1px;
+
+border-bottom-style: solid;
+
+border-bottom-color: #cfcfcf;
+
+text-shadow: #ffffff -1px -1px;
+font-weight:bold
+ }
+ 
+.infoBox {
+  background:  url(images/infobox/bg.gif) no-repeat center bottom;
+}
+
+.infoBoxContents {
+  
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:.9em;
+  padding:20px;
+  border-top:1px solid #ffffff;
+  margin-bottom:20px 
+}
+
+.infoBoxNotice {
+  background: #FF8E90;
+}
+
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+
+.offerImg {
+	float:left;
+	width:  85px;
+	height: 95px;
+	margin-right:5px
+	
+	}
+
+.offerInfo {
+	float:left;
+	width: 75px;
+	height: 95px;
+	line-height:1.5em
+	}
+
+.offerInfoUpcomming {
+	float:left;
+	width: 300x;
+	height: 95px;
+	line-height:2em
+	}
+
+.offerInfo small .pc {
+	background:url(images/icons/pc-small.gif) 0 0;
+	height:14px;
+	width:44px;
+	display:block;
+	}
+	
+.offerInfo  strong {
+	font-size:.85em;
+	 text-align:left;
+	 text-transform:uppercase
+	}
+
+.offerInfo  strong span {
+	font-weight:normal;
+	margin-left:3px;
+	text-decoration:line-through
+	}
+
+.offerInfo span strong {
+	font-weight:bold;
+	margin-left:3px;
+	text-decoration:none;
+	font-size:1em;
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif
+	}
+
+.consoleType {
+	border-bottom:1px dotted #999;
+	padding-bottom:3px;
+	padding-top:3px;
+	
+}
+
+
+.upcomingDate {
+	padding:5px;
+	background:#FF6600;
+	color:#FFFFFF;
+	margin:1px
+}
+
+.upcommingProducts {
+	width:25%;
+	text-align:center;
+	height:auto; !important
+	min-height:200px;
+	height:200px
+	
+}
+
+
+.upcommingProducts img {
+	padding:3px
+	}
+
+.upcommingProducts strong {
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+	line-height:1.5em
+	}
+
+.upcommingProducts a {
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+	line-height:1.5em;
+	
+	}
+	
+.upcommingProducts strong small {
+	font-size:14px;
+	font-weight:bold;
+	color:#000;
+
+	}
+
+.upcommingProducts span {
+	font-size:11px;
+	padding:3px 0 0 25px;
+	color:#333;
+	margin:0 0 10px 0;
+	text-align:right;
+	background:#f2f1f1 url(images/icons/data.png) 0 0 no-repeat
+	
+	}
+
+.upcommingProductsVerMas{
+	padding:10px;
+	text-align:right;
+	font-size:12px;
+	border-top:1px dotted #fff
+}
+
+.accessories {
+	overflow:auto;
+	text-align:center;
+	width:460px
+}
+
+.xbox-new {
+	background:url(images/icons/xbox-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.wii-new {
+	background:url(images/icons/wii-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.ps3-new {
+	background:url(images/icons/ps3-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.pc-new {
+	background:url(images/icons/pc-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.psp-new {
+	background:url(images/icons/psp-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+
+.nds-new {
+	background:url(images/icons/nds-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+.ps2-new {
+	background:url(images/icons/ps2-new.gif) 0 0 no-repeat;
+	width:100px;
+	height:60px;
+	display:block;
+	padding:0 0 10px 0;
+	margin:15px 0 0 0	
+}
+
+
+.top1 {
+	background: url(images/infobox/bg_top_ventas_1.png) center left no-repeat;
+	padding-left:25px
+	}
+.top2 {
+	background: url(images/infobox/bg_top_ventas_2.png) center left no-repeat;
+	padding-left:25px
+	}
+.top3 {
+	background: url(images/infobox/bg_top_ventas_3.png) center left no-repeat;
+	padding-left:25px
+	}
+.top4 {
+	background: url(images/infobox/bg_top_ventas_4.png) center left no-repeat;
+	padding-left:25px
+	}
+.top5 {
+	background: url(images/infobox/bg_top_ventas_5.png) center left no-repeat;
+	padding-left:25px
+	}
+	
+/****************/
+/*	 FOOTER     */ 
+/****************/
+
+#Footer {
+	width:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px auto;
+	margin-bottom:0;
+	text-align:center;
+	font-size:.75em;
+	height:150px;
+	padding:40px 0 20px 0;
+	color:#fff;
+	border-top:1px solid #9F7EA9;
+	border-bottom:3px solid #111;
+	background:#3D054F url(images/banners/bg-footer.gif) center top no-repeat
+	}
+
+.BgFooter {
+	width:960px;
+	height:150px;
+	margin:0 auto;
+	text-align:center;
+	
+	}
+
+#Footer a {
+	color:#FFFFFF;
+	text-decoration:underline;
+	font-size:.80em;
+	padding:0 20px 0 20px
+		}
+	
+/****************/
+/*	 MISC      */ 
+/****************/
+
+a {
+color: #000000;
+text-decoration: none;
+}
+
+a:hover
+{
+color: #9200BF;
+text-decoration: underline;
+}
+
+.clearleft {
+	clear:left
+	}
+
+.clearfix {
+	clear:both
+	}
+	
+textarea,
+input[type='text'], 
+input[type='password'],
+select {
+	border: 1px #666666 solid;
+	padding: 0 1px 1px 1px;
+}
+
+textarea:focus,
+input[type='text']:focus, 
+input[type='password']:focus,
+select:focus {
+	border-color: #000;
+	outline: 2px solid #fec707;
+	color:#000
+}
+
+
+
+.bloquenovedades table {
+	text-align:center;
+}
+
+.bloquenovedades a {
+font-size:13px;
+color:#333333
+
+}

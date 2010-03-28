@@ -1,0 +1,5 @@
+images/*
+download/*
+nbproject/*
+*.png
+*.gif
