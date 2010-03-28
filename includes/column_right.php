@@ -60,7 +60,7 @@ require(DIR_WS_BOXES . 'consolas.php');
 
                        <td>
 
-                       <?=tep_display_banner('static', $banner)?>
+                       <?php echo tep_display_banner('static', $banner)?>
 
                        </td>
 

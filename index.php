@@ -185,7 +185,7 @@ contenttype: ['inline'] // content type <--No comma following the very last para
                                  <table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
                                      <tr>
                                        <td>
-                                           <?=tep_display_banner('static', $banner)?>                                       </td>
+                                           <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                      </tr>
                                      <tr>
                                        <td>
@@ -218,7 +218,7 @@ contenttype: ['inline'] // content type <--No comma following the very last para
                 
                                        <td>
                 
-                                       <?=tep_display_banner('static', $banner)?>                                       </td>
+                                       <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                      </tr>
                 
                                      <tr>
@@ -255,7 +255,7 @@ contenttype: ['inline'] // content type <--No comma following the very last para
                 
                                        <td>
                 
-                                       <?=tep_display_banner('static', $banner)?>                                       </td>
+                                       <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                      </tr>
                 
                                      <tr>
@@ -292,7 +292,7 @@ contenttype: ['inline'] // content type <--No comma following the very last para
                 
                                        <td>
                 
-                                       <?=tep_display_banner('static', $banner)?>                                       </td>
+                                       <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                      </tr>
                 
                                      <tr>
@@ -631,16 +631,16 @@ stepcarousel.setup({
                          <div class="panelAccessories">
                            <table>
                              <tr>
-                               <td style="text-align:center"><?=('<a  href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $accesorios['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $accesorios['products_image'], $accesorios['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>')?>                               </td>
+                               <td style="text-align:center"><?php echo('<a  href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $accesorios['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $accesorios['products_image'], $accesorios['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>')?>                               </td>
                              <tr>
-                               <td  style="height:30px !important; color:#222;text-align:center; font-size:12px; font-weight:normal"><?=$accesorios['products_name']?>                               </td>
+                               <td  style="height:30px !important; color:#222;text-align:center; font-size:12px; font-weight:normal"><?php echo $accesorios['products_name']?>                               </td>
                              </tr>
                              <tr>
                                <td style="text-align:center"><strong style="color:#fe0000; font-size:14px">
-                                 <?= ($currencies->display_price($accesorios['products_price'], tep_get_tax_rate($accesorios['products_tax_class_id'])))?>
+                                 <?php echo($currencies->display_price($accesorios['products_price'], tep_get_tax_rate($accesorios['products_tax_class_id'])))?>
                                </strong> </td>
                              <tr>
-                               <td style="text-align:center"><img src="images/icons/<?=$accesorios['products_model'] ?>-small.gif"/> </td>
+                               <td style="text-align:center"><img src="images/icons/<?php echo $accesorios['products_model'] ?>-small.gif"/> </td>
                              </tr>
                            </table>
                          </div>
@@ -808,7 +808,7 @@ stepcarousel.setup({
         
                                <td>
         
-                               <?=tep_display_banner('static', $banner)?>                               </td>
+                               <?php echo tep_display_banner('static', $banner)?>                               </td>
                              </tr>
         
                              <tr>
@@ -845,7 +845,7 @@ stepcarousel.setup({
         
                                <td>
         
-                               <?=tep_display_banner('static', $banner)?>                               </td>
+                               <?php echo tep_display_banner('static', $banner)?>                               </td>
                              </tr>
         
                              <tr>
@@ -879,7 +879,7 @@ stepcarousel.setup({
         
                                <td>
         
-                               <?=tep_display_banner('static', $banner)?>                               </td>
+                               <?php echo tep_display_banner('static', $banner)?>                               </td>
                              </tr>
         
                              <tr>
