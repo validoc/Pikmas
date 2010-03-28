@@ -8,6 +8,7 @@
   Copyright (c) 2007 osCommerce
  
   Edited by carakan
+  over this
  
   Released under the GNU General Public License
 */
