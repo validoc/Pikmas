@@ -6,7 +6,9 @@
   http://www.oscommerce.com
 
   Copyright (c) 2007 osCommerce
-
+ 
+  Edited by carakan
+ 
   Released under the GNU General Public License
 */
 
