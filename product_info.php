@@ -99,12 +99,20 @@
     }
 ?>
       <tr>
-        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <td>
+            <table border="0" width="100%" cellspacing="0" cellpadding="0">
           <tr>
-  <td class="pageHeading" style="color:#777; padding:10px" valign="top"><?php echo $products_name; ?></td>
+            <td class="pageHeading" style="color:#777; padding:10px" valign="top"><?php echo $products_name; ?></td>
             <td class="pageHeading" style="color:#D72006; font-size:30px;padding:10px; " align="right" valign="top"><?php echo $products_price; ?></td>
           </tr>
-        </table></td>
+          <?php if($product_info['products_quantity'] < 1) { ?>
+          <tr>
+            <td class="pageHeading" style="color:#777; padding:10px" valign="top"></td>
+            <td class="pageHeading" style="color:#D72006; font-size:10px;padding:0 25px; " align="right" valign="top">AGOTADO</td>
+          </tr>
+          <?php } ?>
+        </table>
+        </td>
       </tr>
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
