@@ -25,7 +25,7 @@
   define('DB_SERVER', 'localhost');
   define('DB_SERVER_USERNAME', 'root');
   define('DB_SERVER_PASSWORD', '');
-  define('DB_DATABASE', 'freelance_pikmas');
+  define('DB_DATABASE', 'tienda');
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'mysql');
 ?>
