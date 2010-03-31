@@ -19,7 +19,17 @@
                             <td class="boxText">
                                 <ul>
                                     <?php
-                                    $seminuevos_query = tep_db_query("select distinct p.products_id, p.products_model, p.products_image, p.products_tax_class_id, pd.products_name, if(s.status, s.specials_new_products_price, p.products_price) as products_price, c.categories_image AS category_image FROM " . TABLE_PRODUCTS . " p left join " . TABLE_SPECIALS . " s on p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c where p.products_id = p2c.products_id and p2c.categories_id = c.categories_id and c.categories_id = '42' and p.products_status = '1' and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by p.products_date_added desc limit 5");
+                                    $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
+                                                                        p.products_model, p.products_image,
+                                                                        p.products_tax_class_id, pd.products_name,
+                                                                        if(s.status, s.specials_new_products_price, p.products_price) as products_price,
+                                                                        c.categories_id AS category_id , c.categories_image AS category_image
+                                                                        FROM " . TABLE_PRODUCTS . " p 
+                                                                        LEFT JOIN " . TABLE_SPECIALS . " s ON p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c
+                                                                        WHERE p.products_id = p2c.products_id and p2c.categories_id = c.categories_id
+                                                                        AND c.categories_id = '42' and p.products_status = '1' AND p.products_id = pd.products_id
+                                                                        AND pd.language_id = '" . (int)$languages_id . "'
+                                                                        ORDER by p.products_date_added desc limit 5");
                                     while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
                                     <li class="consoleType">
                                         <table>
@@ -37,7 +47,7 @@
                                                     <table align="left">
                                                         <tr>
                                                             <td>
-                                                                    <?php echo('<a  style="font-weight:normal !important; color:#222; font-size:12px" href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $seminuevos['products_id']) . '">' . $seminuevos['products_name']. '</a>')?>
+                                                                    <?php echo('<a  style="font-weight:normal !important; color:#222; font-size:12px" href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $seminuevos['products_id']. '&category=' . $seminuevos['category_id']) . '">' . $seminuevos['products_name']. '</a>')?>
                                                             </td>
                                                         </tr>
                                                         <tr>

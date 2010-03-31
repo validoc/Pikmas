@@ -1,20 +1,7 @@
 <?php
-/*
-  $Id: product_listing.php 1739 2007-12-20 00:52:16Z hpdl $
-
-  osCommerce, Open Source E-Commerce Solutions
-  http://www.oscommerce.com
-
-  Copyright (c) 2003 osCommerce
-
-  Released under the GNU General Public License
-*/
-
   $listing_split = new splitPageResults($listing_sql, MAX_DISPLAY_SEARCH_RESULTS, 'p.products_id');
-
   if ( ($listing_split->number_of_rows > 0) && ( (PREV_NEXT_BAR_LOCATION == '1') || (PREV_NEXT_BAR_LOCATION == '3') ) ) {
 ?>
-
 <table border="0" width="500px" cellspacing="0" cellpadding="2" class="productListing">
   <tr>
     <td class="smallText"><?php echo $listing_split->display_count(TEXT_DISPLAY_NUMBER_OF_PRODUCTS); ?></td>
@@ -23,7 +10,6 @@
 </table>
 <?php
   }
-
   $list_box_contents = array();
   if (isset($HTTP_GET_VARS['products_model'])) {
   for ($col=0, $n=sizeof($column_list); $col<$n; $col++) {

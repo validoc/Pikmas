@@ -96,7 +96,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
             });
         </script>
         <!--// end overlay script-->
-    <?php } ?>
+            <?php } ?>
         <!--[if IE]>
            <style type="text/css">
            .facebox {
@@ -170,9 +170,9 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                     <td width="180" valign="top">
                         <table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
                             <!-- left_navigation //-->
-<?php require(DIR_WS_INCLUDES . 'column_left.php'); ?><!-- left_navigation_eof //-->
+                            <?php require(DIR_WS_INCLUDES . 'column_left.php'); ?><!-- left_navigation_eof //-->
                         </table>
-<?php
+                        <?php
                         if ($banner = tep_banner_exists('dynamic', 'izquierda3')) {
                             ?>
                         <!-- banner asistencia-->
@@ -185,7 +185,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                     <table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
                                         <tr>
                                             <td>
-    <?php echo tep_display_banner('static', $banner)?>                                       </td>
+                                                    <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -195,7 +195,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                             </tr>
                         </table>
 
-    <?php  } ?>
+                            <?php  } ?>
                         <?php
 
                         if ($banner = tep_banner_exists('dynamic', 'izquierda4')) {
@@ -218,7 +218,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
 
                                             <td>
 
-    <?php echo tep_display_banner('static', $banner)?>                                       </td>
+                                                    <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                         </tr>
 
                                         <tr>
@@ -232,7 +232,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                             </tr>
                         </table>
 
-    <?php  } ?>
+                            <?php  } ?>
                         <?php
 
                         if ($banner = tep_banner_exists('dynamic', 'izquierda6')) {
@@ -255,7 +255,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
 
                                             <td>
 
-    <?php echo tep_display_banner('static', $banner)?>                                       </td>
+                                                    <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                         </tr>
 
                                         <tr>
@@ -269,7 +269,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                             </tr>
                         </table>
 
-    <?php  } ?>
+                            <?php  } ?>
                         <?php
 
                         if ($banner = tep_banner_exists('dynamic', 'izquierda5')) {
@@ -292,7 +292,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
 
                                             <td>
 
-    <?php echo tep_display_banner('static', $banner)?>                                       </td>
+                                                    <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                         </tr>
 
                                         <tr>
@@ -306,13 +306,13 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                             </tr>
                         </table>
 
-    <?php  } ?></td>
+                            <?php  } ?></td>
 
 
 
 
 
-<?php
+                    <?php
                     if ($category_depth == 'nested') {
                         $category_query = tep_db_query("select cd.categories_name, c.categories_image from " . TABLE_CATEGORIES . " c, " . TABLE_CATEGORIES_DESCRIPTION . " cd where c.categories_id = '" . (int)$current_category_id . "' and cd.categories_id = '" . (int)$current_category_id . "' and cd.language_id = '" . (int)$languages_id . "'");
                         $category = tep_db_fetch_array($category_query);
@@ -336,7 +336,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                             <td>
                                                 <table border="0" width="100%" cellspacing="0" cellpadding="2">
                                                     <tr>
-    <?php
+                                                            <?php
                                                             if (isset($cPath) && strpos('_', $cPath)) {
 // check to see if there are deeper categories within the current category
                                                                 $category_links = array_reverse($cPath_array);
@@ -384,7 +384,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                             </tr>
                         </table>    </td>
 
-    <?php
+                        <?php
                     } elseif ($category_depth == 'products' || isset($HTTP_GET_VARS['manufacturers_id'])  || isset($HTTP_GET_VARS['products_model'])) {
 // create column list
                         $define_list = array('PRODUCT_LIST_MODEL' => PRODUCT_LIST_MODEL,
@@ -506,9 +506,9 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                     <table border="0" width="100%" cellspacing="0" cellpadding="0">
                                         <tr>
                                             <td class="pageHeading"><?php echo HEADING_TITLE; ?></td>
-    <?php
+                                                <?php
 // optional Product List Filter
-    if (PRODUCT_LIST_FILTER > 0) {
+                                                if (PRODUCT_LIST_FILTER > 0) {
                                                     if (isset($HTTP_GET_VARS['manufacturers_id'])) {
                                                         $filterlist_sql = "select distinct c.categories_id as id, cd.categories_name as name from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c, " . TABLE_CATEGORIES_DESCRIPTION . " cd where p.products_status = '1' and p.products_id = p2c.products_id and p2c.categories_id = c.categories_id and p2c.categories_id = cd.categories_id and cd.language_id = '" . (int)$languages_id . "' and p.manufacturers_id = '" . (int)$HTTP_GET_VARS['manufacturers_id'] . "' order by cd.categories_name";
                                                     } elseif (isset($HTTP_GET_VARS['products_model'])) {
@@ -547,7 +547,13 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                     $image = $image['categories_image'];
                                                 }
                                                 ?>
+                                                <?php
+                                                if (isset($HTTP_GET_VARS['products_model'])) { ?>
+                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . $_GET['products_model'].'.png', HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
+
+                                                    <?php } else { ?>
                                             <td align="right"><?php echo tep_image(DIR_WS_IMAGES . $image, HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
+                                                    <?php } ?>
                                         </tr>
                                     </table>        </td>
                             </tr>
@@ -558,9 +564,9 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                 <td><?php include(DIR_WS_MODULES . FILENAME_PRODUCT_LISTING); ?></td>
                             </tr>
                         </table>    </td>
-    <?php
-} else { // default page
-    ?>
+                        <?php
+                    } else { // default page
+                        ?>
 
                     <td valign="top" width="500">
                         <table border="0" cellspacing="0" cellpadding="0">
@@ -622,9 +628,9 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                                 </script><!-- // carrusel accessories -->
                                                                 <div id="mygalleryAccessories" class="stepcarouselAccessories">
                                                                     <div class="beltAccessories">
-    <?php
+                                                                            <?php
 
-    $accesorios_query = tep_db_query("select distinct p.products_id, p.products_model, p.products_image, p.products_tax_class_id, pd.products_name, if(s.status, s.specials_new_products_price, p.products_price) as products_price from " . TABLE_PRODUCTS . " p left join " . TABLE_SPECIALS . " s on p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c where p.products_id = p2c.products_id and p2c.categories_id = c.categories_id and c.categories_id = '28' and p.products_status = '1' and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by p.products_date_added desc limit 100");
+                                                                            $accesorios_query = tep_db_query("select distinct p.products_id, p.products_model, p.products_image, p.products_tax_class_id, pd.products_name, if(s.status, s.specials_new_products_price, p.products_price) as products_price from " . TABLE_PRODUCTS . " p left join " . TABLE_SPECIALS . " s on p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c where p.products_id = p2c.products_id and p2c.categories_id = c.categories_id and c.categories_id = '28' and p.products_status = '1' and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by p.products_date_added desc limit 100");
                                                                             while ($accesorios = tep_db_fetch_array($accesorios_query)) { ?>
                                                                         <div class="panelAccessories">
                                                                             <table>
@@ -635,14 +641,14 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td style="text-align:center"><strong style="color:#fe0000; font-size:14px">
-        <?php echo($currencies->display_price($accesorios['products_price'], tep_get_tax_rate($accesorios['products_tax_class_id'])))?>
+                                                                                                    <?php echo($currencies->display_price($accesorios['products_price'], tep_get_tax_rate($accesorios['products_tax_class_id'])))?>
                                                                                         </strong> </td>
                                                                                 <tr>
                                                                                     <td style="text-align:center"><img src="images/icons/<?php echo $accesorios['products_model'] ?>-small.gif"/> </td>
                                                                                 </tr>
                                                                             </table>
                                                                         </div>
-        <?php } ?>
+                                                                                <?php } ?>
                                                                     </div>
                                                                 </div>              	<a  class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=28">Ver todos los accesorios  	&rarr; </a>                 	 </div>
 
@@ -664,9 +670,9 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
 
 
 
-    <?php
+                                                        <?php
 
-    if ($banner = tep_banner_exists('dynamic', 'izquierda1') || $banner = tep_banner_exists('dynamic', 'derecha1')) {
+                                                        if ($banner = tep_banner_exists('dynamic', 'izquierda1') || $banner = tep_banner_exists('dynamic', 'derecha1')) {
 
                                                             ?>
 
@@ -680,13 +686,13 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                     <tr>
 
                                                         <td colspan="2" align="center"><?php if ($banner = tep_banner_exists('dynamic', 'izquierda1')) {
-            echo tep_display_banner('static', $banner);
-        }?></td>
+                                                                        echo tep_display_banner('static', $banner);
+                                                                    }?></td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2" align="center"><?php if ($banner = tep_banner_exists('dynamic', 'derecha1')) {
-            echo tep_display_banner('static', $banner);
-        }?></td>
+                                                                        echo tep_display_banner('static', $banner);
+                                                                    }?></td>
 
                                                     </tr>
 
@@ -694,13 +700,13 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
 
                                                         }
 
-    ?>
+                                                        ?>
 
                                                         <?php
 
                                                         if ($banner = tep_banner_exists('dynamic', 'izquierda2') || $banner = tep_banner_exists('dynamic', 'derecha2')) {
 
-        ?>
+                                                            ?>
 
                                                     <tr>
 
@@ -712,13 +718,13 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                     <tr>
 
                                                         <td colspan="2" align="center"><?php if ($banner = tep_banner_exists('dynamic', 'izquierda2')) {
-            echo tep_display_banner('static', $banner);
-        }?></td>
+                                                                        echo tep_display_banner('static', $banner);
+                                                                    }?></td>
                                                     </tr>
                                                     <tr>
                                                         <td  colspan="2" align="center"><?php if ($banner = tep_banner_exists('dynamic', 'derecha2')) {
-                                                                echo tep_display_banner('static', $banner);
-                                                            }?></td>
+                                                                        echo tep_display_banner('static', $banner);
+                                                                    }?></td>
                                                     </tr>
 
                                                             <?php
@@ -728,11 +734,11 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
 
                                                         ?>
 
-    <?php
+                                                        <?php
 
-    if ($banner = tep_banner_exists('dynamic', 'baner1') || $banner = tep_banner_exists('dynamic', 'baner2')) {
+                                                        if ($banner = tep_banner_exists('dynamic', 'baner1') || $banner = tep_banner_exists('dynamic', 'baner2')) {
 
-        ?>
+                                                            ?>
 
                                                     <tr>
 
@@ -744,32 +750,32 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                     <tr>
 
                                                         <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner1')) {
-            echo tep_display_banner('static', $banner);
-        }?></td>
+                                                                        echo tep_display_banner('static', $banner);
+                                                                    }?></td>
 
                                                         <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner2')) {
-            echo tep_display_banner('static', $banner);
-        }?></td>
+                                                                        echo tep_display_banner('static', $banner);
+                                                                    }?></td>
                                                     </tr>
 
 
                                                     <tr>
 
                                                         <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner3')) {
-                                                                echo tep_display_banner('static', $banner);
-        }?></td>
+                                                                        echo tep_display_banner('static', $banner);
+                                                                    }?></td>
 
                                                         <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner4')) {
-            echo tep_display_banner('static', $banner);
-        }?></td>
+                                                                        echo tep_display_banner('static', $banner);
+                                                                    }?></td>
                                                     </tr>
 
-        <?php
+                                                            <?php
 
-                        }
+                                                        }
 
 
-    ?>
+                                                        ?>
 
 
                                                 </table>
@@ -779,9 +785,9 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                     </table>        </td>
                             </tr>
                         </table>     </td>
-    <?php
-}
-                            ?>
+                        <?php
+                    }
+                    ?>
 
 
 
@@ -794,14 +800,14 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                     <td width="180" valign="top">
 
                         <table border="0" width="180"cellspacing="0" cellpadding="2">
-<?php require(DIR_WS_INCLUDES . 'column_right.php'); ?>
+                            <?php require(DIR_WS_INCLUDES . 'column_right.php'); ?>
                         </table>
 
-<?php
+                        <?php
 
-if ($banner = tep_banner_exists('dynamic', 'derecha3')) {
+                        if ($banner = tep_banner_exists('dynamic', 'derecha3')) {
 
-    ?>
+                            ?>
 
 
 
@@ -822,7 +828,7 @@ if ($banner = tep_banner_exists('dynamic', 'derecha3')) {
 
                                             <td>
 
-    <?php echo tep_display_banner('static', $banner)?>                               </td>
+                                                    <?php echo tep_display_banner('static', $banner)?>                               </td>
                                         </tr>
 
                                         <tr>
@@ -836,12 +842,12 @@ if ($banner = tep_banner_exists('dynamic', 'derecha3')) {
                             </tr>
                         </table>
 
-    <?php  } ?>
-<?php
+                            <?php  } ?>
+                        <?php
 
-if ($banner = tep_banner_exists('dynamic', 'derecha4')) {
+                        if ($banner = tep_banner_exists('dynamic', 'derecha4')) {
 
-    ?>
+                            ?>
                         <!-- banner asistencia-->
 
                         </br>
@@ -859,7 +865,7 @@ if ($banner = tep_banner_exists('dynamic', 'derecha4')) {
 
                                             <td>
 
-    <?php echo tep_display_banner('static', $banner)?>                               </td>
+                                                    <?php echo tep_display_banner('static', $banner)?>                               </td>
                                         </tr>
 
                                         <tr>
@@ -873,12 +879,12 @@ if ($banner = tep_banner_exists('dynamic', 'derecha4')) {
                             </tr>
                         </table>
 
-    <?php  } ?>
-<?php
+                            <?php  } ?>
+                        <?php
 
-if ($banner = tep_banner_exists('dynamic', 'derecha5')) {
+                        if ($banner = tep_banner_exists('dynamic', 'derecha5')) {
 
-    ?>
+                            ?>
                         <!-- banner asistencia-->
                         </br>
                         <table border="0" cellspacing="0" width="100%" cellpadding="0">
@@ -893,7 +899,7 @@ if ($banner = tep_banner_exists('dynamic', 'derecha5')) {
 
                                             <td>
 
-    <?php echo tep_display_banner('static', $banner)?>                               </td>
+                                                    <?php echo tep_display_banner('static', $banner)?>                               </td>
                                         </tr>
 
                                         <tr>
@@ -909,7 +915,7 @@ if ($banner = tep_banner_exists('dynamic', 'derecha5')) {
                             </tr>
                         </table>
 
-    <?php  } ?></td>
+                            <?php  } ?></td>
                 </tr>
 
             </table>
@@ -917,7 +923,7 @@ if ($banner = tep_banner_exists('dynamic', 'derecha5')) {
         <br>
     <tr>
 
-<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
+        <?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
 
     </tr>
 

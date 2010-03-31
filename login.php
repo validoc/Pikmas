@@ -233,6 +233,7 @@ function session_win() {
     </table></td>
   </tr>
 </table>
+<?php include(DIR_WS_INCLUDES . '../_categories.php'); ?>
 <!-- body_eof //-->
 </div>
 <br>
