@@ -108,7 +108,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
         <![endif]-->
         <script type="text/javascript">
             $(document).ready(function(){
-                $('ul.TabbedPanelsTabGroup li.TabbedPanelsTab:last-child').css("display","none");
+                $('ul.TabbedPanelsTabGroup li.TabbedPanelsTab::contains("otros")').css("display","none");
             });
         </script>
     </head>
