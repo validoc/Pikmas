@@ -1,5 +1,6 @@
 <?php
 function select_and_fill ($types) {
+
     $the_sql = "SELECT pd.products_id, pd.products_name from " . TABLE_PRODUCTS_DESCRIPTION . " pd
         WHERE pd.products_id IN ( SELECT products_id FROM products_selected WHERE products_selected.type = '$types')
         AND pd.language_id = 3";
@@ -24,32 +25,43 @@ function select_and_fill ($types) {
 
 if(isset($_POST["action"])) {
     require('includes/application_top.php');
-    if(isset($_POST["section"])) {
-        $section = $_POST["section"];
-        if($_POST["section"] == '42') {
-            $section = 'consolas';
-        } elseif($_POST["section"] == '29') {
-            $section = 'seminuevos';
-        }
-        if(isset($_POST["product_id"])) {
-            $product_id = $_POST["product_id"];
-            $the_sql = "INSERT INTO freelance_pikmas.products_selected
+    $the_action = $_POST["action"];
+    if($the_action == 'create') {
+        if(isset($_POST["section"])) {
+            $section = $_POST["section"];
+            if($_POST["section"] == '42') {
+                $section = 'consolas';
+            } elseif($_POST["section"] == '29') {
+                $section = 'seminuevos';
+            }
+            if(isset($_POST["product_id"])) {
+                $product_id = $_POST["product_id"];
+                $the_sql = "INSERT INTO freelance_pikmas.products_selected
                             (id ,type ,products_id ,position)
                             VALUES (NULL , '$section', '$product_id', '1');";
-            $the_result = tep_db_query($the_sql);
-            if($the_result) {
-                echo 'Añadido con exito';
+                $the_result = tep_db_query($the_sql);
+                if($the_result) {
+                    echo 'Añadido con exito';
+                } else {
+                    echo "No se pudo añadir a la BD";
+                }
+
             } else {
-                echo "No se pudo añadir a la BD";
+                echo "Debe de seleccionar un producto";
             }
-
         } else {
-            echo "Debe de seleccionar un producto";
+            echo "Debe de seleccionar una categoria";
         }
-    } else {
-        echo "Debe de seleccionar una categoria";
+    } elseif ($the_action == 'destroy') {
+        $the_id = $_POST['id'];
+        $the_sql = "DELETE FROM products_selected WHERE products_selected.products_id = '$the_id'";
+        $the_query = tep_db_query($the_sql);
+    } elseif($the_action == 'update') {
+        echo select_and_fill('top');
+        echo select_and_fill('consolas');
+        echo select_and_fill('seminuevos');
+        echo select_and_fill('rebajas');
     }
-
 } elseif(isset($_POST["section"])) {
     require('includes/application_top.php');
     $the_action = $_POST["section"];
@@ -94,19 +106,24 @@ if(isset($_POST["action"])) {
     </span>
     <input type="submit" value="Adicionar" />
     <br style="clear: both;" />
-        <?php
-        select_and_fill('top');
-        select_and_fill('consolas');
-        select_and_fill('seminuevos');
-        select_and_fill('rebajas');
-        ?>
+    <div id="select-combos">
+            <?php
+            select_and_fill('top');
+            select_and_fill('consolas');
+            select_and_fill('seminuevos');
+            select_and_fill('rebajas');
+            ?>
+    </div>
     <br style="clear: both;" />
     <span id="the_result">
     </span>
+    <input type="submit" value="eliminar seleccionados" id="btn-borrar">
 </form>
+
 <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
 <script type="text/javascript">
     jQuery('document').ready(function (){
+        jQuery.ajaxSetup({cache:false});
         jQuery('#section-cat').change(function() {
             jQuery.post('<?php echo DIR_PIKMAS . '_categories.php' ?>',
             jQuery('#data-category').serializeArray(),
@@ -117,14 +134,27 @@ if(isset($_POST["action"])) {
         });
         jQuery('#data-category').submit(function (){
             jQuery('#data-category').append('<input value="create" name="action" type="hidden" id="creator-id" />');
-            jQuery.post('<?php echo DIR_PIKMAS . '_categories.php' ?>',
+            jQuery.post('<?php echo DIR_PIKMAS . '_categories.php?' ?>' + Math.random(),
             jQuery('#data-category').serializeArray(),
             function(data){
                 jQuery('#the_result').html(data);
             });
+            jQuery.post('<?php echo DIR_PIKMAS . '_categories.php?'?>' + Math.random(),{'action':"update"}, function(data){
+                jQuery('#select-combos').html(data);
+            });
             jQuery('#creator-id').remove();
             return false;
         });
+        jQuery('#btn-borrar').click(function(){
+            jQuery('#select-combos select option:selected').each(function(){
+                jQuery.post('<?php echo DIR_PIKMAS . '_categories.php?' ?>' + Math.random(),{"id" : jQuery(this).val(), 'action':"destroy"});
+            });
+            jQuery.post('<?php echo DIR_PIKMAS . '_categories.php?' ?>' + Math.random(),{'action':"update"}, function(data){
+                jQuery('#select-combos').html(data);
+            });
+            return false;
+        });
     });
+
 </script>
     <?php } ?>
