@@ -1,6 +1,6 @@
 <?php
-  define('HTTP_SERVER', 'http://localhost/freelance');
-  define('HTTPS_SERVER', 'http://localhost/freelance');
+  define('HTTP_SERVER', 'http://localhost');
+  define('HTTPS_SERVER', 'http://localhost');
   define('ENABLE_SSL', false);
   define('HTTP_COOKIE_DOMAIN', 'localhost');
   define('HTTPS_COOKIE_DOMAIN', 'localhost');
