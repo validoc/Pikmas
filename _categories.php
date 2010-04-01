@@ -95,6 +95,7 @@ if(isset($_POST["action"])) {
 } else {
     ?>
 <form action="login.php#" method="post" id="data-category">
+    <h4>ACA ELEGIS LOS PRODUCTOS QUE VAS  A MOSTRAR EN CADA PANEL:</h4>
     <select name="section" id="section-cat">
         <option value="0">Seleccione ...</option>
         <option value="top">Top ventas</option>
