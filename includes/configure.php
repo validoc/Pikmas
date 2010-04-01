@@ -1,9 +1,9 @@
 <?php
-  define('HTTP_SERVER', 'http://www.pikmas.com');
-  define('HTTPS_SERVER', 'http://www.pikmas.com');
+  define('HTTP_SERVER', 'http://localhost/freelance');
+  define('HTTPS_SERVER', 'http://localhost/freelance');
   define('ENABLE_SSL', false);
-  define('HTTP_COOKIE_DOMAIN', 'www.pikmas.com');
-  define('HTTPS_COOKIE_DOMAIN', 'www.pikmas.com');
+  define('HTTP_COOKIE_DOMAIN', 'localhost');
+  define('HTTPS_COOKIE_DOMAIN', 'localhost');
   define('HTTP_COOKIE_PATH', '/tienda/');
   define('HTTPS_COOKIE_PATH', '/tienda/');
   define('DIR_WS_HTTP_CATALOG', '/tienda/');
@@ -16,6 +16,8 @@
   define('DIR_WS_CLASSES', DIR_WS_INCLUDES . 'classes/');
   define('DIR_WS_MODULES', DIR_WS_INCLUDES . 'modules/');
   define('DIR_WS_LANGUAGES', DIR_WS_INCLUDES . 'languages/');
+
+  define('DIR_PIKMAS', HTTP_SERVER.DIR_WS_HTTP_CATALOG);
 
   define('DIR_WS_DOWNLOAD_PUBLIC', 'pub/');
   define('DIR_FS_CATALOG', '/web/htdocs/www.pikmas.com/home/tienda/');

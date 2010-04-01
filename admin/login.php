@@ -22,7 +22,7 @@
         $password = tep_db_prepare_input($HTTP_POST_VARS['password']);
 
         $check_query = tep_db_query("select id, user_name, user_password from " . TABLE_ADMINISTRATORS . " where user_name = '" . tep_db_input($username) . "'");
-
+        
         if (tep_db_num_rows($check_query) == 1) {
           $check = tep_db_fetch_array($check_query);
 
