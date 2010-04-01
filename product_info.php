@@ -44,7 +44,9 @@
 <div class="wrapper header">
 <!-- header //-->
 
-<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<?php require(DIR_WS_INCLUDES . 'header.php');
+    $extra = true;
+?>
 <!-- header_eof //-->
 
 <!-- body //-->

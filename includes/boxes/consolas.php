@@ -1,5 +1,34 @@
 <!-- consolas-->
-
+<?php
+if(isset($extra)) {
+    $prod = tep_db_fetch_array(tep_db_query('SELECT products_model FROM products WHERE products.products_id = '. $HTTP_GET_VARS['products_id']));
+    $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
+                                    p.products_model, p.products_image,
+                                    p.products_tax_class_id, pd.products_name,
+                                    if(s.status, s.specials_new_products_price, p.products_price) as products_price,
+                                    c.categories_id AS category_id , c.categories_image AS category_image
+                                    FROM " . TABLE_PRODUCTS . " p
+                                    LEFT JOIN " . TABLE_SPECIALS . " s ON p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c
+                                    WHERE p.products_id = p2c.products_id and p2c.categories_id = c.categories_id
+                                    AND c.categories_id = '42' and p.products_status = '1' AND p.products_id = pd.products_id
+                                    AND pd.language_id = '" . (int)$languages_id . "'
+                                    AND p.products_id IN (SELECT products_id FROM products WHERE products.products_model = '". $prod['products_model'] ."')
+                                    ORDER by p.products_date_added desc");
+} else {
+    $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
+                                    p.products_model, p.products_image,
+                                    p.products_tax_class_id, pd.products_name,
+                                    if(s.status, s.specials_new_products_price, p.products_price) as products_price,
+                                    c.categories_id AS category_id , c.categories_image AS category_image
+                                    FROM " . TABLE_PRODUCTS . " p
+                                    LEFT JOIN " . TABLE_SPECIALS . " s ON p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c
+                                    WHERE p.products_id = p2c.products_id and p2c.categories_id = c.categories_id
+                                    AND c.categories_id = '42' and p.products_status = '1' AND p.products_id = pd.products_id
+                                    AND pd.language_id = '" . (int)$languages_id . "'
+                                    AND p.products_id IN (SELECT products_id FROM products_selected WHERE products_selected.type = 'consolas')
+                                    ORDER by p.products_date_added desc");    
+}
+?>
 <tr>
     <td>
         <table border="0" cellspacing="0" width="180px"  cellpadding="0">
@@ -19,30 +48,6 @@
                             <td class="boxText">
                                 <ul>
                                     <?php
-//                                    $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
-//                                                                        p.products_model, p.products_image,
-//                                                                        p.products_tax_class_id, pd.products_name,
-//                                      if(s.status, s.specials_new_products_price, p.products_price) as products_price,
-//                                      c.categories_id AS category_id , c.categories_image AS category_image
-//                                      FROM " . TABLE_PRODUCTS . " p
-//                                      LEFT JOIN " . TABLE_SPECIALS . " s ON p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c
-//                                      WHERE p.products_id = p2c.products_id and p2c.categories_id = c.categories_id
-//                                      AND c.categories_id = '42' and p.products_status = '1' AND p.products_id = pd.products_id
-//                                      AND pd.language_id = '" . (int)$languages_id . "'
-//                                      ORDER by p.products_date_added desc limit 5");
-
-                                    $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
-                                                                        p.products_model, p.products_image,
-                                                                        p.products_tax_class_id, pd.products_name,
-                                                                        if(s.status, s.specials_new_products_price, p.products_price) as products_price,
-                                                                        c.categories_id AS category_id , c.categories_image AS category_image
-                                                                        FROM " . TABLE_PRODUCTS . " p 
-                                                                        LEFT JOIN " . TABLE_SPECIALS . " s ON p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c
-                                                                        WHERE p.products_id = p2c.products_id and p2c.categories_id = c.categories_id
-                                                                        AND c.categories_id = '42' and p.products_status = '1' AND p.products_id = pd.products_id
-                                                                        AND pd.language_id = '" . (int)$languages_id . "'
-                                                                        AND p.products_id IN (SELECT products_id FROM products_selected WHERE products_selected.type = 'consolas')
-                                                                        ORDER by p.products_date_added desc");
                                     while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
                                     <li class="consoleType">
                                         <table>
@@ -73,7 +78,7 @@
                                                         <tr>
                                                             <td>
                                                                 <small>
-                                                                    <img src="images/icons/<?php echo $seminuevos['category_image']; ?>" />
+                                                                    <img src="images/icons/<?php echo $seminuevos['products_model']; ?>-small.gif" />
                                                                 </small>
                                                             </td>
                                                         </tr>
@@ -84,7 +89,7 @@
                                     </li>
                                         <?php } ?>
                                 </ul>
-                                <a  class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">Ver todas las consolas  	&rarr; </a>
+                                <a class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">Ver todas las consolas  	&rarr; </a>
                             </td>
                         </tr>
                         <tr>
@@ -92,6 +97,10 @@
                                 <img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" />
                             </td>
                         </tr>
-                    </table></td></tr></table>
-    </td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
 <!-- // consolas-->
