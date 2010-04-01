@@ -72,26 +72,16 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
             ?>
         <!--overlay script-->
         <script>
-            // What is $(document).ready ? See: http://flowplayer.org/tools/using.html#document_ready
             $(document).ready(function() {
-                // select the overlay element - and "make it an overlay"
                 $("#facebox").overlay({
-                    // custom top position
                     top: 102,
-                    // some expose tweaks suitable for facebox-looking dialogs
                     expose: {
-                        // you might also consider a "transparent" color for the mask
                         color: '#fff',
-                        // load mask a little faster
                         loadSpeed: 0,
-                        // highly transparent
                         opacity: 0.5
                     },
-                    // disable this for modal dialog-type of overlays
                     closeOnClick: false,
-                    // we want to use the programming API
                     api: true
-                    // load it immediately after the construction
                 }).load();
             });
         </script>
@@ -207,7 +197,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                             ?>
                         <!-- banner asistencia-->
 
-                        </br>
+                        <br />
 
                         <table border="0" cellspacing="0" width="100%" cellpadding="0">
                         </table>
@@ -216,23 +206,17 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
 
                             <tr>
 
-                                <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-
+                                <td>
+                                    <table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
                                         <tr>
-
                                             <td>
-
                                                     <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                         </tr>
-
                                         <tr>
-
-
-
                                             <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
                                         </tr>
-
-                                    </table></td>
+                                    </table>
+                                </td>
                             </tr>
                         </table>
 

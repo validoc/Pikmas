@@ -1,6 +1,10 @@
 <!-- consolas-->
 <?php
-if(isset($extra))
+if(isset($extra)){
+    
+} else {
+    
+}
 $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
                                     p.products_model, p.products_image,
                                     p.products_tax_class_id, pd.products_name,
@@ -14,7 +18,6 @@ $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
                                     AND p.products_id IN (SELECT products_id FROM products_selected WHERE products_selected.type = 'consolas')
                                     ORDER by p.products_date_added desc");
 ?>
-
 <tr>
     <td>
         <table border="0" cellspacing="0" width="180px"  cellpadding="0">
@@ -33,8 +36,8 @@ $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
                         <tr>
                             <td class="boxText">
                                 <ul>
-<?php
-while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
+                                          <?php
+                                    while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
                                     <li class="consoleType">
                                         <table>
                                             <tr>
@@ -42,7 +45,7 @@ while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
                                                     <table>
                                                         <tr>
                                                             <td>
-                                                                    <?php echo(tep_image(DIR_WS_IMAGES . $seminuevos['products_image'], $seminuevos['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT))?>
+                                                                <?php echo(tep_image(DIR_WS_IMAGES . $seminuevos['products_image'], $seminuevos['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT))?>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -51,7 +54,7 @@ while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
                                                     <table align="left">
                                                         <tr>
                                                             <td>
-                                                                    <?php echo('<a  style="font-weight:normal !important; color:#222; font-size:12px" href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $seminuevos['products_id']. '&category=' . $seminuevos['category_id']) . '">' . $seminuevos['products_name']. '</a>')?>
+                                                                <?php echo('<a  style="font-weight:normal !important; color:#222; font-size:12px" href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $seminuevos['products_id']. '&category=' . $seminuevos['category_id']) . '">' . $seminuevos['products_name']. '</a>')?>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -75,7 +78,7 @@ while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
                                     </li>
                                     <?php } ?>
                                 </ul>
-                                <a  class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">Ver todas las consolas  	&rarr; </a>
+                                <a class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">Ver todas las consolas  	&rarr; </a>
                             </td>
                         </tr>
                         <tr>
@@ -83,6 +86,10 @@ while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
                                 <img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" />
                             </td>
                         </tr>
-                    </table></td></tr></table>
-    </td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
 <!-- // consolas-->

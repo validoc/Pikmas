@@ -1,4 +1,10 @@
 <?php
+if(isset($extra)){
+
+} else {
+
+}
+
 $specials_query = tep_db_query("select p.products_id, pd.products_name, p.products_price, p.products_tax_class_id, p.products_model, p.products_image, s.specials_new_products_price from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_SPECIALS . " s
                                     where p.products_status = '1' and p.products_id = s.products_id and pd.products_id = s.products_id and pd.language_id = '" . (int)$languages_id . "' and s.status = '1'
                                     AND p.products_id IN (SELECT products_id FROM products_selected WHERE products_selected.type = 'rebajas')
