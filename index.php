@@ -98,7 +98,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
         <![endif]-->
         <script type="text/javascript">
             $(document).ready(function(){
-                $('ul.TabbedPanelsTabGroup li.TabbedPanelsTab:contains("pc")').css("display","none");
+                $('ul.TabbedPanelsTabGroup li.TabbedPanelsTab:contains("otros")').css("display","none");
             });
         </script>
     </head>
@@ -516,7 +516,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                 ?>
                                                 <?php
                                                 if (isset($HTTP_GET_VARS['products_model'])) { ?>
-                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . 'consola-'. $_GET['products_model'].'.png', HEADING_TITLE, '85', '60'); ?></td>
+                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . 'consola-'. $_GET['products_model'].'.png', HEADING_TITLE, '187', '67'); ?></td>
 
                                                     <?php } else { ?>
                                             <td align="right"><?php echo tep_image(DIR_WS_IMAGES . $image, HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
