@@ -106,7 +106,11 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
             }
             </style>
         <![endif]-->
-
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('ul.TabbedPanelsTabGroup li.TabbedPanelsTab:last-child').css("display","none");
+            });
+        </script>
     </head>
     <body>
         <div id="facebox">
