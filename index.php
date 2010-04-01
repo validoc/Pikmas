@@ -287,35 +287,19 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                         </table>
 
                         <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-
                             <tr>
-
                                 <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-
                                         <tr>
-
                                             <td>
-
                                                     <?php echo tep_display_banner('static', $banner)?>                                       </td>
                                         </tr>
-
                                         <tr>
-
-
-
                                             <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
                                         </tr>
-
                                     </table></td>
                             </tr>
                         </table>
-
                             <?php  } ?></td>
-
-
-
-
-
                     <?php
                     if ($category_depth == 'nested') {
                         $category_query = tep_db_query("select cd.categories_name, c.categories_image from " . TABLE_CATEGORIES . " c, " . TABLE_CATEGORIES_DESCRIPTION . " cd where c.categories_id = '" . (int)$current_category_id . "' and cd.categories_id = '" . (int)$current_category_id . "' and cd.language_id = '" . (int)$languages_id . "'");
@@ -329,7 +313,8 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                             <td class="pageHeading"><?php echo HEADING_TITLE; ?></td>
                                             <td class="pageHeading" align="right"><?php echo tep_image(DIR_WS_IMAGES . $category['categories_image'], $category['categories_name'], HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
                                         </tr>
-                                    </table></td>
+                                    </table>
+                                </td>
                             </tr>
                             <tr>
                                 <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
@@ -384,10 +369,11 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                         <tr>
                                             <td><?php include(DIR_WS_MODULES . FILENAME_NEW_PRODUCTS); ?></td>
                                         </tr>
-                                    </table></td>
+                                    </table>
+                                </td>
                             </tr>
-                        </table>    </td>
-
+                        </table>
+                    </td>
                         <?php
                     } elseif ($category_depth == 'products' || isset($HTTP_GET_VARS['manufacturers_id'])  || isset($HTTP_GET_VARS['products_model'])) {
 // create column list
@@ -407,9 +393,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                         while (list($key, $value) = each($define_list)) {
                             if ($value > 0) $column_list[] = $key;
                         }
-
                         $select_column_list = '';
-
                         for ($i=0, $n=sizeof($column_list); $i<$n; $i++) {
                             switch ($column_list[$i]) {
                                 case 'PRODUCT_LIST_MODEL':
@@ -432,7 +416,6 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                     break;
                             }
                         }
-
 // show the products of a specified manufacturer
                         if (isset($HTTP_GET_VARS['manufacturers_id'])) {
                             if (isset($HTTP_GET_VARS['filter_id']) && tep_not_null($HTTP_GET_VARS['filter_id'])) {
@@ -453,8 +436,6 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                 $listing_sql = "select " . $select_column_list . " p.products_id, p.manufacturers_id, p.products_price, p.products_tax_class_id, IF(s.status, s.specials_new_products_price, NULL) as specials_new_products_price, IF(s.status, s.specials_new_products_price, p.products_price) as final_price from " . TABLE_PRODUCTS . " p left join " . TABLE_SPECIALS . " s on p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_MANUFACTURERS . " m where p.products_status = '1' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "' and p.manufacturers_id = m.manufacturers_id and p.products_model = '" . $HTTP_GET_VARS['products_model'] . "'";
                             }
                         }
-
-
                         else {
 // show the products in a given categorie
                             if (isset($HTTP_GET_VARS['filter_id']) && tep_not_null($HTTP_GET_VARS['filter_id'])) {
@@ -477,7 +458,6 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                         } else {
                             $sort_col = substr($HTTP_GET_VARS['sort'], 0 , 1);
                             $sort_order = substr($HTTP_GET_VARS['sort'], 1);
-
                             switch ($column_list[$sort_col-1]) {
                                 case 'PRODUCT_LIST_MODEL':
                                     $listing_sql .= " order by p.products_model " . ($sort_order == 'd' ? 'desc' : '') . ", pd.products_name";
@@ -511,7 +491,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                         <tr>
                                             <td class="pageHeading"><?php echo HEADING_TITLE; ?></td>
                                                 <?php
-// optional Product List Filter
+                                                // optional Product List Filter
                                                 if (PRODUCT_LIST_FILTER > 0) {
                                                     if (isset($HTTP_GET_VARS['manufacturers_id'])) {
                                                         $filterlist_sql = "select distinct c.categories_id as id, cd.categories_name as name from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c, " . TABLE_CATEGORIES_DESCRIPTION . " cd where p.products_status = '1' and p.products_id = p2c.products_id and p2c.categories_id = c.categories_id and p2c.categories_id = cd.categories_id and cd.language_id = '" . (int)$languages_id . "' and p.manufacturers_id = '" . (int)$HTTP_GET_VARS['manufacturers_id'] . "' order by cd.categories_name";
@@ -538,8 +518,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                         echo tep_hide_session_id() . '</form></td>' . "\n";
                                                     }
                                                 }
-
-// Get the right image for the top-right
+                                                // Get the right image for the top-right
                                                 $image = DIR_WS_IMAGES . 'table_background_list.gif';
                                                 if (isset($HTTP_GET_VARS['manufacturers_id'])) {
                                                     $image = tep_db_query("select manufacturers_image from " . TABLE_MANUFACTURERS . " where manufacturers_id = '" . (int)$HTTP_GET_VARS['manufacturers_id'] . "'");
@@ -553,7 +532,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                 ?>
                                                 <?php
                                                 if (isset($HTTP_GET_VARS['products_model'])) { ?>
-                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . $_GET['products_model'].'.png', HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
+                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . 'consola-'. $_GET['products_model'].'.png', HEADING_TITLE, '85', '60'); ?></td>
 
                                                     <?php } else { ?>
                                             <td align="right"><?php echo tep_image(DIR_WS_IMAGES . $image, HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
