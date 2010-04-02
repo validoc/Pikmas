@@ -36,7 +36,7 @@ if(isset($_POST["action"])) {
             }
             if(isset($_POST["product_id"])) {
                 $product_id = $_POST["product_id"];
-                $the_sql = "INSERT INTO freelance_pikmas.products_selected
+                $the_sql = "INSERT INTO products_selected
                             (id ,type ,products_id ,position)
                             VALUES (NULL , '$section', '$product_id', '1');";
                 $the_result = tep_db_query($the_sql);
@@ -66,7 +66,7 @@ if(isset($_POST["action"])) {
     require('includes/application_top.php');
     $the_action = $_POST["section"];
     if($the_action == 'top') {
-        $the_query = tep_db_query("select distinct p.products_id, p.products_price, p.products_tax_class_id, p.products_image, p.products_model, pd.products_name from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_ordered > 0 and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by p.products_ordered desc, pd.products_name");
+        $the_query = tep_db_query("select distinct p.products_id, p.products_price, p.products_tax_class_id, p.products_image, p.products_model, pd.products_name from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by p.products_ordered desc, pd.products_name");
     } elseif($the_action == '29') {
         $the_query = tep_db_query("select distinct p.products_id, p.products_model, p.products_image, p.products_tax_class_id, pd.products_name, if(s.status, s.specials_new_products_price, p.products_price) as products_price, c.categories_image AS category_image FROM " . TABLE_PRODUCTS . " p LEFT JOIN " . TABLE_SPECIALS . " s on p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c where p.products_id = p2c.products_id and p2c.categories_id = c.categories_id and c.categories_id = '29' and p.products_status = '1' and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by p.products_date_added desc");
     } elseif($the_action == '42') {

@@ -1,18 +1,5 @@
 <?php
-/*
-  $Id: index.php 1739 2007-12-20 00:52:16Z hpdl $
-
-  osCommerce, Open Source E-Commerce Solutions
-  http://www.oscommerce.com
-
-  Copyright (c) 2003 osCommerce
-
-  Released under the GNU General Public License
-*/
-
 require('includes/application_top.php');
-
-// the following cPath references come from application_top.php
 $category_depth = 'top';
 if (isset($cPath) && tep_not_null($cPath)) {
     $categories_products_query = tep_db_query("select count(*) as total from " . TABLE_PRODUCTS_TO_CATEGORIES . " where categories_id = '" . (int)$current_category_id . "'");
@@ -151,9 +138,6 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                         </div>
                         <div id="mygallery-paginate">
                             <img src="opencircle.png" data-over="graycircle.png" data-select="closedcircle.png" data-moveby="1" /></div>
-
-
-
                         <!--//SlideShow--></td>
                 </tr>
             </table>
