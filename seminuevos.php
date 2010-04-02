@@ -407,13 +407,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                                 $image = DIR_WS_IMAGES . 'table_background_list.gif';
                                                
                                                 ?>
-                                                <?php
-                                                if (isset($HTTP_GET_VARS['products_model'])) { ?>
-                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . 'consola-'. $_GET['products_model'].'.png', HEADING_TITLE, '187', '67'); ?></td>
-
-                                                    <?php } else { ?>
-                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . "consolas.png", HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
-                                                    <?php } ?>
+                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . 'seminuevoslogo.gif', HEADING_TITLE, '187', '67'); ?></td>
                                         </tr>
                                     </table>        </td>
                             </tr>
