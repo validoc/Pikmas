@@ -230,6 +230,7 @@
                 <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                 <td class="main"><?php echo '<a href="' . tep_href_link(FILENAME_PRODUCT_REVIEWS, tep_get_all_get_params()) . '">' . tep_image_button('button_reviews.gif', IMAGE_BUTTON_REVIEWS) . '</a>'; ?></td>
                 <?php  if ($product_info['products_date_available'] > date('Y-m-d H:i:s')) { ?>
+                <input type="hidden" value="true" name="resevar"/>
                 <td class="main" align="right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_image_submit('boton-reservar.gif', IMAGE_BUTTON_IN_CART); ?></td>
                 <?php } else { ?>
                 <td class="main" align="right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_image_submit('button_in_cart.gif', IMAGE_BUTTON_IN_CART); ?></td>

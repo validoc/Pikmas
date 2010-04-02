@@ -1,19 +1,7 @@
 <?php
-/*
-  $Id: checkout_shipping.php 1739 2007-12-20 00:52:16Z hpdl $
-
-  osCommerce, Open Source E-Commerce Solutions
-  http://www.oscommerce.com
-
-  Copyright (c) 2003 osCommerce
-
-  Released under the GNU General Public License
-*/
-
   require('includes/application_top.php');
   require('includes/classes/http_client.php');
 
-// if the customer is not logged on, redirect them to the login page
   if (!tep_session_is_registered('customer_id')) {
     $navigation->set_snapshot();
     tep_redirect(tep_href_link(FILENAME_LOGIN, '', 'SSL'));
@@ -127,13 +115,17 @@
             }
           }
         } else {
+            
           tep_session_unregister('shipping');
         }
       }
     } else {
       $shipping = false;
-                
-      tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, '', 'SSL'));
+      if(isset($_POST['reservar']) && $_POST['reservar'] == 'yes'){
+         tep_redirect(tep_href_link(FILENAME_CHECKOUT_CONFIRMATION, '', 'SSL'));
+      } else{
+         tep_redirect(tep_href_link(FILENAME_CHECKOUT_PAYMENT, '', 'SSL'));
+      }
     }    
   }
 
@@ -266,28 +258,21 @@ function rowOutEffect(object) {
         <td><table border="0" width="100%" cellspacing="1" cellpadding="2">
           <tr>
             <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
-<?php
-    if (sizeof($quotes) > 1 && sizeof($quotes[0]) > 1) {
-?>
+<?php if (sizeof($quotes) > 1 && sizeof($quotes[0]) > 1) { ?>
               <tr>
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                 <td width="50%" valign="top"><?php echo TEXT_CHOOSE_SHIPPING_METHOD; ?></td>
                 <td width="50%" valign="top" align="right"><?php echo '<b>' . TITLE_PLEASE_SELECT . '</b><br>' . tep_image(DIR_WS_IMAGES . 'arrow_east_south.gif'); ?></td>
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
               </tr>
-<?php
-    } elseif ($free_shipping == false) {
-?>
+<?php  } elseif ($free_shipping == false) { ?>
               <tr>
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                 <td width="100%" colspan="2"><?php echo TEXT_ENTER_SHIPPING_INFORMATION; ?></td>
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
               </tr>
-<?php
-    }
-
-    if ($free_shipping == true) {
-?>
+<?php } 
+    if ($free_shipping == true) { ?>
               <tr>
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                 <td colspan="2" width="100%"><table border="0" width="100%" cellspacing="0" cellpadding="2">
@@ -307,8 +292,7 @@ function rowOutEffect(object) {
 <?php
     } else {
       $radio_buttons = 0;
-      for ($i=0, $n=sizeof($quotes); $i<$n; $i++) {
-?>
+      for ($i=0, $n=sizeof($quotes); $i<$n; $i++) { ?>
               <tr>
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                 <td colspan="2"><table border="0" width="100%" cellspacing="0" cellpadding="2">
@@ -317,9 +301,7 @@ function rowOutEffect(object) {
                     <td  colspan="3"><b><?php echo $quotes[$i]['module']; ?></b>&nbsp;<?php if (isset($quotes[$i]['icon']) && tep_not_null($quotes[$i]['icon'])) { echo $quotes[$i]['icon']; } ?></td>
                     <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                   </tr>
-<?php
-        if (isset($quotes[$i]['error'])) {
-?>
+<?php if (isset($quotes[$i]['error'])) { ?>
                   <tr>
                     <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                     <td  colspan="3"><?php echo $quotes[$i]['error']; ?></td>
@@ -328,7 +310,6 @@ function rowOutEffect(object) {
 <?php
         } else {
           for ($j=0, $n2=sizeof($quotes[$i]['methods']); $j<$n2; $j++) {
-// set the radio button to be checked if it is the method chosen
             $checked = (($quotes[$i]['id'] . '_' . $quotes[$i]['methods'][$j]['id'] == $shipping['id']) ? true : false);
 
             if ( ($checked == true) || ($n == 1 && $n2 == 1) ) {
@@ -372,13 +353,11 @@ function rowOutEffect(object) {
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
       </tr>
-<?php
-  }
-?>
+<?php  } ?>
       <tr>
         <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
           <tr>
-            <td  ><b><?php echo TABLE_HEADING_COMMENTS; ?></b></td>
+            <td><b><?php echo TABLE_HEADING_COMMENTS; ?></b></td>
           </tr>
         </table></td>
       </tr>

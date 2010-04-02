@@ -151,7 +151,7 @@ if ($messageStack->size('header') > 0) {
                             <li><a href="#">Accesorios</a></li>
                         </ul>
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?cPath=29#">Seminuevos</a>
+                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/seminuevos.php">Seminuevos</a>
                         <ul>
                             <li><a href="http://www.pikmas.com/tienda/product_info.php?cPath=29&products_id=676">Xbox360</a></li>
                             <li><a href="#">Wii</a></li>
