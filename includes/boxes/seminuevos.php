@@ -53,7 +53,9 @@ if(isset($extra)) {
                                         </table>
                                     </li>
                                         <?php } ?>
-                                </ul></td></tr><tr>
+                                </ul>
+                            <a class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=29#" style="border-top: medium none; display: inline-block; padding: 5px;">Ver todos los seminuevos &rarr; </a>
+                            </td></tr><tr>
                             <td>
                                 <img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" />
                             </td>
