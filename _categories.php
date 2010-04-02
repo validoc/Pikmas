@@ -36,7 +36,7 @@ if(isset($_POST["action"])) {
             }
             if(isset($_POST["product_id"])) {
                 $product_id = $_POST["product_id"];
-                $the_sql = "INSERT INTO freelance_pikmas.products_selected
+                $the_sql = "INSERT INTO products_selected
                             (id ,type ,products_id ,position)
                             VALUES (NULL , '$section', '$product_id', '1');";
                 $the_result = tep_db_query($the_sql);

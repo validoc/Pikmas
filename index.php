@@ -893,7 +893,9 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
         <?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
 
     </tr>
-
+<!--<script type="text/javascript">
+    var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>-->
 </body>
 </html>
 

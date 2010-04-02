@@ -86,9 +86,9 @@
 <!-- footer_eof //-->
 <br>
 </div>
-    <script type="text/javascript">
+<!--<script type="text/javascript">
     var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
+</script>-->
 </body>
 </html>
 <?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
