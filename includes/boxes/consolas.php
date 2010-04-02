@@ -1,7 +1,12 @@
 <!-- consolas-->
 <?php
 if(isset($extra)) {
-    $prod = tep_db_fetch_array(tep_db_query('SELECT products_model FROM products WHERE products.products_id = '. $HTTP_GET_VARS['products_id']));
+    if(isset($HTTP_GET_VARS['products_id'])) {
+        $prod = tep_db_fetch_array(tep_db_query('SELECT products_model FROM products WHERE products.products_id = '. $HTTP_GET_VARS['products_id']));
+        $the_type_normal = $prod['products_model'];
+    } else {
+        $the_type_normal = $HTTP_GET_VARS['products_model'];
+    }
     $seminuevos_query = tep_db_query("SELECT distinct p.products_id,
                                     p.products_model, p.products_image,
                                     p.products_tax_class_id, pd.products_name,
@@ -12,7 +17,7 @@ if(isset($extra)) {
                                     WHERE p.products_id = p2c.products_id and p2c.categories_id = c.categories_id
                                     AND c.categories_id = '42' and p.products_status = '1' AND p.products_id = pd.products_id
                                     AND pd.language_id = '" . (int)$languages_id . "'
-                                    AND p.products_id IN (SELECT products_id FROM products WHERE products.products_model = '". $prod['products_model'] ."')
+                                    AND p.products_id IN (SELECT products_id FROM products WHERE products.products_model = '". $the_type_normal ."')
                                     ORDER by p.products_date_added desc");
 } else {
     $seminuevos_query = tep_db_query("SELECT distinct p.products_id,

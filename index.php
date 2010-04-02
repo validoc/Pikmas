@@ -18,6 +18,11 @@ if (isset($cPath) && tep_not_null($cPath)) {
 }
 
 require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
+
+if(isset($HTTP_GET_VARS['products_model'])){
+    $extra = true;
+}
+
 ?>
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>

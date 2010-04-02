@@ -15,6 +15,8 @@
   require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_SPECIALS);
 
   $breadcrumb->add(NAVBAR_TITLE, tep_href_link(FILENAME_SPECIALS));
+
+  $extra = 1;
 ?>
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
