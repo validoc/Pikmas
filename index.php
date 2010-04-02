@@ -519,7 +519,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
                                             <td align="right"><?php echo tep_image(DIR_WS_IMAGES . 'consola-'. $_GET['products_model'].'.png', HEADING_TITLE, '187', '67'); ?></td>
 
                                                     <?php } else { ?>
-                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . "consolas.png", HEADING_TITLE, HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT); ?></td>
+                                            <td align="right"><?php echo tep_image(DIR_WS_IMAGES . "consolas.png", HEADING_TITLE, '187', '67'); ?></td>
                                                     <?php } ?>
                                         </tr>
                                     </table>        </td>
@@ -635,7 +635,7 @@ require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_DEFAULT);
 
                                                 <table width="550" border="0" cellspacing="5" cellpadding="5" align="center">
 
-
+                                                    <h1>paisa</h1>
 
                                                         <?php
 
