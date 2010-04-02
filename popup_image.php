@@ -34,6 +34,9 @@ function resize() {
 </head>
 <body onload="resize();">
 <?php echo tep_image(DIR_WS_IMAGES . $products['products_image'], $products['products_name']); ?>
+    <!--<script type="text/javascript">
+    var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>-->
 </body>
 </html>
 <?php require('includes/application_bottom.php'); ?>
