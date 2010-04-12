@@ -119,8 +119,26 @@ if(isset($HTTP_GET_VARS['products_model'])){
                                 defaultbuttons: {enable: true, moveby: 1, leftnav: ['l.png', -40, 100], rightnav: ['r.png', -20, 100]},
                                 statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
                                 contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
-                            })
-
+                                })
+                                var contador = 1;
+                                var incrementar = true;
+                                function set_slide_rotate(){
+                                  stepcarousel.stepTo('mygallery', contador)
+                                  if(incrementar){
+                                    contador += 1;
+                                    if(contador >= 4 ){
+                                      incrementar = false;
+                                    }
+                                  } else{
+                                    contador -= 1;
+                                    if(contador <= 1 ){
+                                      incrementar = true;
+                                    }
+                                  }
+                                }
+                            jQuery(document).ready(function(){
+                              setInterval('set_slide_rotate()', 8000);
+                            });
                         </script>
                         <div id="mygallery" class="stepcarousel">
                             <div class="belt">
