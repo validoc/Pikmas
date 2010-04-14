@@ -46,6 +46,7 @@ if(isset($HTTP_GET_VARS['products_model'])){
         <meta name="description" content="Videojuegos todos los videojuegos al mejor precio" />
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="cache-control" content="no-cache" />
+        <link rel="shortcut icon" type="image/x-icon" href="/tienda/favicon.ico">
         <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
         <title><?php echo TITLE; ?></title>
         <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
@@ -95,7 +96,7 @@ if(isset($HTTP_GET_VARS['products_model'])){
         <div id="facebox">
             <!--LISTA ACCESORIO GRATIS-->
             <a href="http://www.pikmas.com/tienda/Regalos-Accesorios-Web.pdf" target="_blank"><img border="0" src="http://www.pikmas.com/tienda/images/gamer.gif"/></a>
-            <button class="close"> Cerrar</button>
+          <button class="close"> Cerrar</button>
         </div><!--//OVERLAY-->
         <div class="wrapper header">
             <!-- header //-->
@@ -119,7 +120,7 @@ if(isset($HTTP_GET_VARS['products_model'])){
                                 defaultbuttons: {enable: true, moveby: 1, leftnav: ['l.png', -40, 100], rightnav: ['r.png', -20, 100]},
                                 statusvars: ['statusA', 'statusB', 'statusC'], // Register 3 "status" variables
                                 contenttype: ['inline'] // content type <--No comma following the very last parameter, always!
-                                })
+                            })
                                 var contador = 1;
                                 var incrementar = true;
                                 function set_slide_rotate(){
@@ -287,6 +288,23 @@ if(isset($HTTP_GET_VARS['products_model'])){
                                     </table></td>
                             </tr>
                         </table>
+                        <!-- accesorios-pdf-->
+                        
+                        	 <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                            <tr>
+                                <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
+                                        <tr>
+                                            <td>
+                                                <a href="tienda/Regalos-Accesorios-Web.pdf" target="_blank"> <img src="/tienda/images/banner-descarga-accesorios.gif" border="0"/></a>
+                                                                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
+                                        </tr>
+                                    </table></td>
+                            </tr>
+                        </table>
+                        <!--// accesorios-pdf -->
                             <?php  } ?></td>
                     <?php
                     if ($category_depth == 'nested') {
@@ -621,7 +639,7 @@ if(isset($HTTP_GET_VARS['products_model'])){
                                                                         </div>
                                                                                 <?php } ?>
                                                                     </div>
-                                                                </div>              	<a  class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=28">Ver todos los accesorios  	&rarr; </a>                 	 </div>
+                                                                </div>              	<a  class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=28"><img src="../tienda/images/vermas.png" border="0"/> </a>                 	 </div>
 
                                                             <!--//SlideShow-->                     </td>
                                                     </tr>
@@ -637,11 +655,12 @@ if(isset($HTTP_GET_VARS['products_model'])){
                                         <tr>
                                             <td>
 
-                                                <table width="550" border="0" cellspacing="5" cellpadding="5" align="center">
+                                                <table width="550" border="0" cellspacing="0" cellpadding="5" align="center">
 
-                                                    <h1>paisa</h1>
-
-                                                        <?php
+                                                    <tr>
+                                                    <td colspan="2" align="center"><img src="/tienda/images/oferta-comuniones.gif" title="Oferta comuniones"/></td>
+</tr>
+                                                <?php
 
                                                         if ($banner = tep_banner_exists('dynamic', 'izquierda1') || $banner = tep_banner_exists('dynamic', 'derecha1')) {
 
@@ -886,7 +905,7 @@ if(isset($HTTP_GET_VARS['products_model'])){
                             </tr>
                         </table>
 
-                            <?php  } ?></td>
+                  <?php  } ?></td>
                 </tr>
 
             </table>

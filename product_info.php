@@ -25,9 +25,7 @@
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-
-<script src="js/prototype.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
 <script src="js/lightbox.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
@@ -96,7 +94,7 @@
     }
 
     if (tep_not_null($product_info['products_model'])) {
-      $products_name = $product_info['products_name'] . '<br><span class="smallText">Familia:&nbsp;' . $product_info['products_model'] . '</span>';
+      $products_name = $product_info['products_name'] . '<br><span class="smallText">' . $product_info['products_model'] . '</span>';
     } else {
       $products_name = $product_info['products_name'];
     }
@@ -111,7 +109,7 @@
           <?php if($product_info['products_quantity'] < 1) { ?>
           <tr>
             <td class="pageHeading" style="color:#777; padding:10px" valign="top"></td>
-            <td class="pageHeading" style="color:#D72006; font-size:10px;padding:0 25px; " align="right" valign="top">AGOTADO</td>
+            <td class="pageHeading" style="color:#D72006; font-size:20px;padding:0 25px; " align="right" valign="top">AGOTADO</td>
           </tr>
           <?php } ?>
         </table>
@@ -231,7 +229,16 @@
                 <td class="main"><?php echo '<a href="' . tep_href_link(FILENAME_PRODUCT_REVIEWS, tep_get_all_get_params()) . '">' . tep_image_button('button_reviews.gif', IMAGE_BUTTON_REVIEWS) . '</a>'; ?></td>
                 <?php  if ($product_info['products_date_available'] > date('Y-m-d H:i:s')) { ?>
                 <input type="hidden" value="true" name="resevar"/>
-                <td class="main" align="right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_image_submit('boton-reservar.gif', IMAGE_BUTTON_IN_CART); ?></td>
+                <td class="main" align="right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_image_submit('boton-reservar.gif', IMAGE_BUTTON_IN_CART, 'id="btn_reservation"'); ?></td>
+                <script>
+                  jQuery("#btn_reservation").click(function(){
+                    var the_form = jQuery(this).parents('form');
+                    var url_for_action = the_form.attr('action').replace("product_info.php", "form_reservation.php", "gi");
+                    the_form.attr('action', url_for_action);
+                    the_form.submit();
+                    return false;
+                  });
+                </script>
                 <?php } else { ?>
                 <td class="main" align="right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_image_submit('button_in_cart.gif', IMAGE_BUTTON_IN_CART); ?></td>
                 <?php } ?>

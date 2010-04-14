@@ -121,12 +121,12 @@ if(isset($_POST["action"])) {
     <input type="submit" value="eliminar seleccionados" id="btn-borrar">
 </form>
 
-<script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
 <script type="text/javascript">
     jQuery('document').ready(function (){
         jQuery.ajaxSetup({cache:false});
         jQuery('#section-cat').change(function() {
-            jQuery.post('<?php echo DIR_PIKMAS . '_categories.php' ?>',
+            jQuery.post('<?php echo DIR_PIKMAS . '/../_categories.php' ?>',
             jQuery('#data-category').serializeArray(),
             function(data){
                 jQuery('#products-cart').html(data);
@@ -135,12 +135,12 @@ if(isset($_POST["action"])) {
         });
         jQuery('#data-category').submit(function (){
             jQuery('#data-category').append('<input value="create" name="action" type="hidden" id="creator-id" />');
-            jQuery.post('<?php echo DIR_PIKMAS . '_categories.php?' ?>' + Math.random(),
+            jQuery.post('<?php echo DIR_PIKMAS . '/../_categories.php?' ?>' + Math.random(),
             jQuery('#data-category').serializeArray(),
             function(data){
                 jQuery('#the_result').html(data);
             });
-            jQuery.post('<?php echo DIR_PIKMAS . '_categories.php?'?>' + Math.random(),{'action':"update"}, function(data){
+            jQuery.post('<?php echo DIR_PIKMAS . '/../_categories.php?'?>' + Math.random(),{'action':"update"}, function(data){
                 jQuery('#select-combos').html(data);
             });
             jQuery('#creator-id').remove();
@@ -148,9 +148,9 @@ if(isset($_POST["action"])) {
         });
         jQuery('#btn-borrar').click(function(){
             jQuery('#select-combos select option:selected').each(function(){
-                jQuery.post('<?php echo DIR_PIKMAS . '_categories.php?' ?>' + Math.random(),{"id" : jQuery(this).val(), 'action':"destroy"});
+                jQuery.post('<?php echo DIR_PIKMAS . '/../_categories.php?' ?>' + Math.random(),{"id" : jQuery(this).val(), 'action':"destroy"});
             });
-            jQuery.post('<?php echo DIR_PIKMAS . '_categories.php?' ?>' + Math.random(),{'action':"update"}, function(data){
+            jQuery.post('<?php echo DIR_PIKMAS . '/../_categories.php?' ?>' + Math.random(),{'action':"update"}, function(data){
                 jQuery('#select-combos').html(data);
             });
             return false;
@@ -158,4 +158,4 @@ if(isset($_POST["action"])) {
     });
 
 </script>
-    <?php } ?>
+<?php } ?>

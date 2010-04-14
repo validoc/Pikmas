@@ -53,14 +53,25 @@ background:transparent url(images/banners/bg-warpper-1.png) center 15px  no-repe
 /****************/
 
 .footer {
-	height:100px !important;
+	height:235px !important;
 	width:100%;
 	margin:0 auto;
 	color:#fff;
 	position:relative;
-	background: url(bgfooterx.gif) repeat-x center top;
-#background: url(bgfooterx.gif) repeat-x center top;
+	background:#9F7EA9;
+border-top:#46274F 1px solid
 	}
+
+.footer a{
+color:#fff !important;
+font-size:12px !important;
+
+}
+
+.footer p {
+color:#fff;
+font-size:11px;}
+
 
 A {
   color: #000000;
@@ -934,7 +945,7 @@ text-transform:capitalize
 
 #SlideShowAccessories {
  width:540px;
- height:200px;
+ height:240px;
  margin:0px auto;
  background: url(images/infobox/bg-big-ccol.gif) center bottom no-repeat;
  border-top:1px solid #fff;
@@ -1462,3 +1473,30 @@ width:560px}
 .right {
 width:180px;
 padding-left:740px}
+
+.h1link {
+color:#fff
+}
+
+.h1link:hover {
+color:#fff !important;
+text-decoration:underline
+}
+.btnPedidos a{
+    font-size:12px;
+    text-decoration:none;
+}
+.m1{
+    margin:0px 0px 10px;
+}
+td.main .mainStrong{
+    color:#D72006;
+    font-size:14px;
+    font-weight:bold;
+    line-height:normal;
+    width:30px;
+}
+
+.privacy {
+font-size:13px !important;
+}
