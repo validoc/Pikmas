@@ -1496,7 +1496,13 @@ td.main .mainStrong{
     line-height:normal;
     width:30px;
 }
-
 .privacy {
 font-size:13px !important;
+}
+.banner{
+  padding: 0;
+  margin: 10px 5px;
+}
+.banner img{
+  width: 180px;
 }

@@ -171,141 +171,8 @@ if(isset($HTTP_GET_VARS['products_model'])){
                             <!-- left_navigation //-->
                             <?php require(DIR_WS_INCLUDES . 'column_left.php'); ?><!-- left_navigation_eof //-->
                         </table>
-                        <?php
-                        if ($banner = tep_banner_exists('dynamic', 'izquierda3')) {
-                            ?>
-                        <!-- banner asistencia-->
-                        </br>
-                        <table border="0" cellspacing="0" width="100%" cellpadding="0">
-                        </table>
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                            <tr>
-                                <td>
-                                    <table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-                                        <tr>
-                                            <td>
-                                                    <?php echo tep_display_banner('static', $banner)?>                                       </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" />                                       </td>
-                                        </tr>
-                                    </table>                                 </td>
-                            </tr>
-                        </table>
-
-                            <?php  } ?>
-                        <?php
-
-                        if ($banner = tep_banner_exists('dynamic', 'izquierda4')) {
-
-                            ?>
-                        <!-- banner asistencia-->
-
-                        <br />
-
-                        <table border="0" cellspacing="0" width="100%" cellpadding="0">
-                        </table>
-
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-
-                            <tr>
-
-                                <td>
-                                    <table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-                                        <tr>
-                                            <td>
-                                                    <?php echo tep_display_banner('static', $banner)?>                                       </td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-
-                            <?php  } ?>
-                        <?php
-
-                        if ($banner = tep_banner_exists('dynamic', 'izquierda6')) {
-
-                            ?>
-                        <!-- banner asistencia-->
-
-                        </br>
-
-                        <table border="0" cellspacing="0" width="100%" cellpadding="0">
-                        </table>
-
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-
-                            <tr>
-
-                                <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-
-                                        <tr>
-
-                                            <td>
-
-                                                    <?php echo tep_display_banner('static', $banner)?>                                       </td>
-                                        </tr>
-
-                                        <tr>
-
-
-
-                                            <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
-                                        </tr>
-
-                                    </table></td>
-                            </tr>
-                        </table>
-
-                            <?php  } ?>
-                        <?php
-
-                        if ($banner = tep_banner_exists('dynamic', 'izquierda5')) {
-
-                            ?>
-                        <!-- banner asistencia-->
-
-                        </br>
-
-                        <table border="0" cellspacing="0" width="100%" cellpadding="0">
-                        </table>
-
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                            <tr>
-                                <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-                                        <tr>
-                                            <td>
-                                                    <?php echo tep_display_banner('static', $banner)?>                                       </td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
-                                        </tr>
-                                    </table></td>
-                            </tr>
-                        </table>
-                        <!-- accesorios-pdf-->
-                        
-                        	 <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                            <tr>
-                                <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-                                        <tr>
-                                            <td>
-                                                <a href="tienda/Regalos-Accesorios-Web.pdf" target="_blank"> <img src="/tienda/images/banner-descarga-accesorios.gif" border="0"/></a>
-                                                                                        </td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
-                                        </tr>
-                                    </table></td>
-                            </tr>
-                        </table>
-                        <!--// accesorios-pdf -->
-                            <?php  } ?></td>
+                      <?php require(DIR_WS_INCLUDES . 'banner_left.php'); ?><!-- left_navigation_eof //-->
+                    </td>
                     <?php
                     if ($category_depth == 'nested') {
                         $category_query = tep_db_query("select cd.categories_name, c.categories_image from " . TABLE_CATEGORIES . " c, " . TABLE_CATEGORIES_DESCRIPTION . " cd where c.categories_id = '" . (int)$current_category_id . "' and cd.categories_id = '" . (int)$current_category_id . "' and cd.language_id = '" . (int)$languages_id . "'");
@@ -654,112 +521,77 @@ if(isset($HTTP_GET_VARS['products_model'])){
                                         <tr>
                                         <tr>
                                             <td>
-
                                                 <table width="550" border="0" cellspacing="0" cellpadding="5" align="center">
+  <tr>
+    <td colspan="2" align="center"><img src="/tienda/images/oferta-comuniones.gif" title="Oferta comuniones"/></td>
+  </tr>
+  <?php
+  if ($banner = tep_banner_exists('dynamic', 'center1')) {
+    ?>
+  <tr>
 
-                                                    <tr>
-                                                    <td colspan="2" align="center"><img src="/tienda/images/oferta-comuniones.gif" title="Oferta comuniones"/></td>
-</tr>
-                                                <?php
-
-                                                        if ($banner = tep_banner_exists('dynamic', 'izquierda1') || $banner = tep_banner_exists('dynamic', 'derecha1')) {
-
-                                                            ?>
-
-                                                    <tr>
-
-                                                        <td colspan="2">&nbsp;</td>
-                                                    </tr>
+    <td colspan="2" align="center"><?php
+          echo tep_display_banner('static', $banner);
+        ?></td>
+  </tr>
 
 
+    <?php
 
-                                                    <tr>
+  }
 
-                                                        <td colspan="2" align="center"><?php if ($banner = tep_banner_exists('dynamic', 'izquierda1')) {
-                                                                        echo tep_display_banner('static', $banner);
-                                                                    }?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2" align="center"><?php if ($banner = tep_banner_exists('dynamic', 'derecha1')) {
-                                                                        echo tep_display_banner('static', $banner);
-                                                                    }?></td>
+  ?>
 
-                                                    </tr>
+  <?php
 
-                                                            <?php
+  if ($banner = tep_banner_exists('dynamic', 'center2')) {
 
-                                                        }
+    ?>
+  <tr>
 
-                                                        ?>
+    <td colspan="2" align="center"><?php
+          echo tep_display_banner('static', $banner);
+        ?>
+    </td>
+  </tr>
 
-                                                        <?php
+    <?php
 
-                                                        if ($banner = tep_banner_exists('dynamic', 'izquierda2') || $banner = tep_banner_exists('dynamic', 'derecha2')) {
-
-                                                            ?>
-
-                                                    <tr>
-
-                                                        <td colspan="2">&nbsp;</td>
-                                                    </tr>
+  }
 
 
+  ?>
 
-                                                    <tr>
+  <?php
 
-                                                        <td colspan="2" align="center"><?php if ($banner = tep_banner_exists('dynamic', 'izquierda2')) {
-                                                                        echo tep_display_banner('static', $banner);
-                                                                    }?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td  colspan="2" align="center"><?php if ($banner = tep_banner_exists('dynamic', 'derecha2')) {
-                                                                        echo tep_display_banner('static', $banner);
-                                                                    }?></td>
-                                                    </tr>
+  if ($banner = tep_banner_exists('dynamic', 'baner1') || $banner = tep_banner_exists('dynamic', 'baner2')) {
 
-                                                            <?php
+    ?>
+  <tr>
 
-                                                        }
+    <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner1')) {
+          echo tep_display_banner('static', $banner);
+        }?></td>
 
-
-                                                        ?>
-
-                                                        <?php
-
-                                                        if ($banner = tep_banner_exists('dynamic', 'baner1') || $banner = tep_banner_exists('dynamic', 'baner2')) {
-
-                                                            ?>
-
-                                                    <tr>
-
-                                                        <td colspan="2">&nbsp;</td>
-                                                    </tr>
-                                                    <tr>
-
-                                                        <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner1')) {
-                                                                        echo tep_display_banner('static', $banner);
-                                                                    }?></td>
-
-                                                        <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner2')) {
-                                                                        echo tep_display_banner('static', $banner);
-                                                                    }?></td>
-                                                    </tr>
+    <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner2')) {
+          echo tep_display_banner('static', $banner);
+        }?></td>
+  </tr>
 
 
-                                                    <tr>
+  <tr>
 
-                                                        <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner3')) {
-                                                                        echo tep_display_banner('static', $banner);
-                                                                    }?></td>
+    <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner3')) {
+          echo tep_display_banner('static', $banner);
+        }?></td>
 
-                                                        <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner4')) {
-                                                                        echo tep_display_banner('static', $banner);
-                                                                    }?></td>
-                                                    </tr>
+    <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner4')) {
+          echo tep_display_banner('static', $banner);
+        }?></td>
+  </tr>
 
-                                                            <?php } ?>
-                                                </table>
-
+    <?php } ?>
+</table>
                                             </td>
                                         </tr>
                                     </table>        </td>
@@ -782,120 +614,8 @@ if(isset($HTTP_GET_VARS['products_model'])){
                         <table border="0" width="180"cellspacing="0" cellpadding="2">
                             <?php require(DIR_WS_INCLUDES . 'column_right.php'); ?>
                         </table>
-
-                        <?php
-
-                        if ($banner = tep_banner_exists('dynamic', 'derecha3')) {
-
-                            ?>
-
-
-
-                        <!-- banner asistencia-->
-
-                        </br>
-
-                        <table border="0" cellspacing="0" width="100%" cellpadding="0">
-                        </table>
-
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-
-                            <tr>
-
-                                <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-
-                                        <tr>
-
-                                            <td>
-
-                                                    <?php echo tep_display_banner('static', $banner)?>                               </td>
-                                        </tr>
-
-                                        <tr>
-
-
-
-                                            <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
-                                        </tr>
-
-                                    </table></td>
-                            </tr>
-                        </table>
-
-                            <?php  } ?>
-                        <?php
-
-                        if ($banner = tep_banner_exists('dynamic', 'derecha4')) {
-
-                            ?>
-                        <!-- banner asistencia-->
-
-                        </br>
-
-                        <table border="0" cellspacing="0" width="100%" cellpadding="0">
-                        </table>
-
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-
-                            <tr>
-
-                                <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-
-                                        <tr>
-
-                                            <td>
-
-                                                    <?php echo tep_display_banner('static', $banner)?>                               </td>
-                                        </tr>
-
-                                        <tr>
-
-
-
-                       <td><!--<img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> --></td>
-                                        </tr>
-
-                                    </table></td>
-                            </tr>
-                        </table>
-
-                            <?php  } ?>
-                        <?php
-
-                        if ($banner = tep_banner_exists('dynamic', 'derecha5')) {
-
-                            ?>
-                        <!-- banner asistencia-->
-                        </br>
-                        <table border="0" cellspacing="0" width="100%" cellpadding="0">
-                        </table>
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-
-                            <tr>
-
-                                <td><table  width="100%"  border="0" cellspacing="0" cellpadding="0" >
-
-                                        <tr>
-
-                                            <td>
-
-                                                    <?php echo tep_display_banner('static', $banner)?>                               </td>
-                                        </tr>
-
-                                        <tr>
-
-
-
-                                            <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /> </td>
-                                        </tr>
-
-
-
-                                    </table></td>
-                            </tr>
-                        </table>
-
-                  <?php  } ?></td>
+                            <?php require(DIR_WS_INCLUDES . 'banner_right.php'); ?>
+                    </td>
                 </tr>
 
             </table>

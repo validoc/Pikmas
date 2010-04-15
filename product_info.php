@@ -35,7 +35,9 @@
 <!-- left_navigation //-->
 <?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
 <!-- left_navigation_eof //-->
-    </table></td>
+    </table>
+    <?php require(DIR_WS_INCLUDES . 'banner_left.php'); ?><!-- left_navigation_eof //-->
+    </td>
 <!-- body_text //-->
     <td width="100%" valign="top"><?php echo tep_draw_form('cart_quantity', tep_href_link(FILENAME_PRODUCT_INFO, tep_get_all_get_params(array('action')) . 'action=add_product')); ?><table border="0" width="100%" cellspacing="0" cellpadding="0">
 <?php
@@ -197,6 +199,38 @@
 <?php
     }
 ?>
+  <!-- regalo -->
+  <?php
+      $the_query = tep_db_query("select distinct p.products_id as id, pd.products_name as text FROM " . TABLE_PRODUCTS . " p LEFT JOIN " . TABLE_SPECIALS . " s on p.products_id = s.products_id, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c where p.products_id = p2c.products_id and p2c.categories_id = c.categories_id and c.categories_id = '46' and p.products_status = '1' and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by p.products_date_added desc");
+      $the_names = array(array('id'=>'', 'text' => 'Ninguno'));
+      while ($the_records = tep_db_fetch_array($the_query)) {
+        array_push($the_names, $the_records);
+      }
+  ?>
+      <tr>
+        <td align="center" class="smallText"><b>Seleccione su regalo: </b><?php echo tep_draw_pull_down_menu('gift_id', $the_names, '', 'id="gift_id"'); ?></td>
+      
+                        <script>
+                          function replacer(str, p1, offset, s){
+                            var result = jQuery('#gift_id').val();
+                            if(result != ''){
+                            return (str + ',' + result);
+                            } else{
+                              return str;
+                            }
+                          }
+                  jQuery(document).ready(function(){
+                  jQuery("#btn_agregar_p").click(function(){
+                    var the_form = jQuery(this).parents('form');
+                    var url_for_action = the_form.attr('action').replace(/products_id=(\d*)/, replacer);
+                    the_form.attr('action', url_for_action);
+                    the_form.submit();
+                    return false;
+                  });
+                  });
+                </script>
+      </tr>
+<!-- regalo end -->
       <tr>
         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
       </tr>
@@ -224,7 +258,7 @@
                   });
                 </script>
                 <?php } else { ?>
-                <td class="main" align="right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_image_submit('button_in_cart.gif', IMAGE_BUTTON_IN_CART); ?></td>
+                <td class="main" align="right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_image_submit('button_in_cart.gif', IMAGE_BUTTON_IN_CART, 'id="btn_agregar_p"'); ?></td>
                 <?php } ?>
                 <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
               </tr>
@@ -253,7 +287,9 @@
 <!-- right_navigation //-->
 <?php require(DIR_WS_INCLUDES . 'column_right.php'); ?>
 <!-- right_navigation_eof //-->
-    </table></td>
+    </table>
+<?php require(DIR_WS_INCLUDES . 'banner_right.php'); ?>
+    </td>
   </tr>
 </table>
 <!-- body_eof //-->
