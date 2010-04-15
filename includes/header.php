@@ -57,17 +57,17 @@ if ($messageStack->size('header') > 0) {
         <td><!-- ******************************** HEAD SECTION  ******************************* -->
             <div id="TopMenu">
                 <div class="Logo">
-                    <h1><a href="#" target="_parent"><img src="images/store_logo.png" border="0" title="Compra de videjuegos, cosolas, accesorios, PIKMAS todo un mundo de videojuegos" alt="Logo Pikmas"/></a></h1> <br />
+                    <h1><a href="<?php echo tep_href_link('index.php') ?>" target="_parent"><img src="images/store_logo.png" border="0" title="Compra de videjuegos, cosolas, accesorios, PIKMAS todo un mundo de videojuegos" alt="Logo Pikmas"/></a></h1> <br />
                 </div>
                 <!-- //Logo-->
                 <div class="UserMenu">
                     <table>
                         <tr>
                             <td colspan="3">
-                                <a href="<?php echo HTTP_SERVER ?>/tienda/logoff.php" class="usertopmenu">Salir</a> &nbsp;|&nbsp;
-                                <a href="<?php echo HTTP_SERVER ?>/tienda/account.php" class="usertopmenu">Mi Cuenta</a> &nbsp;|&nbsp;
-                                <a href="<?php echo HTTP_SERVER ?>/tienda/shopping_cart.php" class="usertopmenu">Ver Cesta</a> &nbsp;|&nbsp;
-                                <a href="<?php echo HTTP_SERVER ?>/tienda/shopping_cart.php" class="usertopmenu">Mis Pedidos</a>
+                                <a href="<?php echo tep_href_link('logoff.php') ?>" class="usertopmenu">Salir</a> &nbsp;|&nbsp;
+                                <a href="<?php echo tep_href_link('account.php') ?>" class="usertopmenu">Mi Cuenta</a> &nbsp;|&nbsp;
+                                <a href="<?php echo tep_href_link('shopping_cart.php') ?>" class="usertopmenu">Ver Cesta</a> &nbsp;|&nbsp;
+                                <a href="<?php echo tep_href_link('shopping_cart.php') ?>" class="usertopmenu">Mis Pedidos</a>
                             </td>
                         </tr>
                         <tr>
@@ -95,16 +95,15 @@ if ($messageStack->size('header') > 0) {
             </div> <!--//TopMenu-->
             <div id="MainMenu">
                 <ul id="MenuBar1" class="MenuBarHorizontal">
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?products_model=ps3" title="Play Station 3">PS 3</a>
+                    <li><a class="MenuBarItemSubmenu textleft" href="<?php echo tep_href_link('index.php', 'products_model=ps3') ?>" title="Play Station 3">PS 3</a>
                         <ul >
-                            <li><a href="http://www.pikmas.com/tienda/product_info.php?cPath=22_36&products_id=252">Juegos</a></li>
+                            <li><a href="<?php echo tep_href_link('index.php?product_info.php', 'cPath=22_36&products_id=252') ?>">Juegos</a></li>
                             <li><a href="#">Seminuevos</a></li>
-                            <li><a href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=14">Consolas</a></li>
+                            <li><a href="<?php echo tep_href_link('index.php', 'cPath=42&sort=2a&filter_id=14') ?>">Consolas</a></li>
                             <li><a href="#">Accesorios</a></li>
                         </ul>
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station Portable y Play Station Go" href="http://www.pikmas.com/tienda/index.php?products_model=psp">PSP</a>
-
+                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station Portable y Play Station Go" href="<?php echo tep_href_link('index.php?products_model=psp') ?>">PSP</a>
                         <ul>
                             <li><a href="#">Juegos</a></li>
                             <li><a href="#">Seminuevos</a></li>
@@ -112,7 +111,7 @@ if ($messageStack->size('header') > 0) {
                             <li><a href="#">Accesorios</a></li>
                         </ul>
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo Wii" href="http://www.pikmas.com/tienda/index.php?products_model=wii">Wii</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo Wii" href="<?php echo tep_href_link('index.php', 'products_model=wii') ?>">Wii</a>
                         <ul>
                             <li><a href="#">Juegos</a></li>
                             <li><a href="#">Seminuevos</a></li>
@@ -120,22 +119,14 @@ if ($messageStack->size('header') > 0) {
                             <li><a href="#">Accesorios</a></li>
                         </ul>
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo DS" href="http://www.pikmas.com/tienda/index.php?products_model=nds">NDS</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo DS" href="<?php echo tep_href_link('index.php', 'products_model=nds') ?>">NDS</a>
                         <ul>
                             <li><a href="#">Juegos</a></li>
                             <li><a href="#">Seminuevos</a></li>
                             <li><a href="#">Consolas</a></li>
                             <li><a href="#">Accesorios</a></li>
                         </ul>
-                    </li>    <li><a class="MenuBarItemSubmenu lileft textleft" title="Xbox 360" href="http://www.pikmas.com/tienda/index.php?products_model=XBOX360">Xbox 360</a>
-                        <ul>
-                            <li><a href="#">Juegos</a></li>
-                            <li><a href="#">Seminuevos</a></li>
-                            <li><a href="#">Consolas</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station 2" href="http://www.pikmas.com/tienda/index.php?products_model=ps2">PS 2</a>
+                    </li>    <li><a class="MenuBarItemSubmenu lileft textleft" title="Xbox 360" href="<?php echo tep_href_link('index.php', 'products_model=XBOX360') ?>">Xbox 360</a>
                         <ul>
                             <li><a href="#">Juegos</a></li>
                             <li><a href="#">Seminuevos</a></li>
@@ -143,7 +134,7 @@ if ($messageStack->size('header') > 0) {
                             <li><a href="#">Accesorios</a></li>
                         </ul>
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Ordenador" href="http://www.pikmas.com/tienda/index.php?products_model=pc">PC</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station 2" href="<?php echo tep_href_link('index.php', 'products_model=ps2') ?>">PS 2</a>
                         <ul>
                             <li><a href="#">Juegos</a></li>
                             <li><a href="#">Seminuevos</a></li>
@@ -151,7 +142,15 @@ if ($messageStack->size('header') > 0) {
                             <li><a href="#">Accesorios</a></li>
                         </ul>
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/seminuevos.php">Seminuevos</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Ordenador" href="<?php echo tep_href_link('index.php', 'products_model=pc') ?>">PC</a>
+                        <ul>
+                            <li><a href="#">Juegos</a></li>
+                            <li><a href="#">Seminuevos</a></li>
+                            <li><a href="#">Consolas</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="MenuBarItemSubmenu textleft" href="<?php echo tep_href_link('seminuevos.php') ?>">Seminuevos</a>
                         <ul>
                             <li><a href="http://www.pikmas.com/tienda/product_info.php?cPath=29&products_id=676">Xbox360</a></li>
                             <li><a href="#">Wii</a></li>
@@ -161,7 +160,7 @@ if ($messageStack->size('header') > 0) {
                             <li><a href="#">PC</a></li>
                         </ul>
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">Consolas</a>
+                    <li><a class="MenuBarItemSubmenu textleft" href="<?php echo tep_href_link('index.php','cPath=42&sort=2a&filter_id=') ?>">Consolas</a>
                         <ul>
                             <li><a href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=16">Xbox360</a></li>
                             <li><a href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=15">Wii NDS</a></li>
@@ -169,7 +168,7 @@ if ($messageStack->size('header') > 0) {
                             <li><a href="#">PS2</a></li>
                         </ul>
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?cPath=28">Accesorios</a>
+                    <li><a class="MenuBarItemSubmenu textleft" href="<?php echo tep_href_link('index.php','cPath=28') ?>">Accesorios</a>
                     </li>
                 </ul>
             </div>
@@ -192,15 +191,10 @@ if (isset($HTTP_GET_VARS['error_message']) && tep_not_null($HTTP_GET_VARS['error
         <td class="headerError"><?php echo htmlspecialchars(stripslashes(urldecode($HTTP_GET_VARS['error_message']))); ?></td>
     </tr>
 </table>
-    <?php
-}
-if (isset($HTTP_GET_VARS['info_message']) && tep_not_null($HTTP_GET_VARS['info_message'])) {
-    ?>
+<?php } if (isset($HTTP_GET_VARS['info_message']) && tep_not_null($HTTP_GET_VARS['info_message'])) { ?>
 <table border="0" width="100%" cellspacing="0" cellpadding="2">
     <tr class="headerInfo">
         <td class="headerInfo"><?php echo htmlspecialchars(stripslashes(urldecode($HTTP_GET_VARS['info_message']))); ?></td>
     </tr>
 </table>
-    <?php
-}
-?>
+<?php } ?>

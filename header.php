@@ -1,15 +1,4 @@
 ﻿<?php
-/*
-  $Id: header.php 1739 2007-12-20 00:52:16Z hpdl $
-
-  osCommerce, Open Source E-Commerce Solutions
-  http://www.oscommerce.com
-
-  Copyright (c) 2003 osCommerce
-
-  Released under the GNU General Public License
-*/
-
 // check if the 'install' directory exists, and warn of its existence
 if (WARN_INSTALL_EXISTENCE == 'true') {
     if (file_exists(dirname($HTTP_SERVER_VARS['SCRIPT_FILENAME']) . '/install')) {
@@ -57,17 +46,17 @@ if ($messageStack->size('header') > 0) {
         <td><!-- ******************************** HEAD SECTION  ******************************* -->
             <div id="TopMenu">
                 <div class="Logo">
-                    <h1><a href="#" target="_parent"><img src="images/store_logo.png" border="0" title="Compra de videjuegos, cosolas, accesorios, PIKMAS todo un mundo de videojuegos" alt="Logo Pikmas"/></a></h1> <br />
+                    <h1><a href="<?php echo tep_href_link('index.php') ?>" target="_parent"><img src="images/store_logo.png" border="0" title="Compra de videjuegos, cosolas, accesorios, PIKMAS todo un mundo de videojuegos" alt="Logo Pikmas"/></a></h1> <br />
                 </div>
                 <!-- //Logo-->
                 <div class="UserMenu">
                     <table>
                         <tr>
                             <td colspan="3">
-                                <a href="<?php echo HTTP_SERVER ?>/tienda/logoff.php" class="usertopmenu">Salir</a> &nbsp;|&nbsp;
-                                <a href="<?php echo HTTP_SERVER ?>/tienda/account.php" class="usertopmenu">Mi Cuenta</a> &nbsp;|&nbsp;
-                                <a href="<?php echo HTTP_SERVER ?>/tienda/shopping_cart.php" class="usertopmenu">Ver Cesta</a> &nbsp;|&nbsp;
-                                <a href="<?php echo HTTP_SERVER ?>/tienda/shopping_cart.php" class="usertopmenu">Mis Pedidos</a>
+                                <a href="<?php echo tep_href_link('logoff.php') ?>" class="usertopmenu">Salir</a> &nbsp;|&nbsp;
+                                <a href="<?php echo tep_href_link('account.php') ?>" class="usertopmenu">Mi Cuenta</a> &nbsp;|&nbsp;
+                                <a href="<?php echo tep_href_link('shopping_cart.php') ?>" class="usertopmenu">Ver Cesta</a> &nbsp;|&nbsp;
+                                <a href="<?php echo tep_href_link('shopping_cart.php') ?>" class="usertopmenu">Mis Pedidos</a>
                             </td>
                         </tr>
                         <tr>
@@ -95,34 +84,34 @@ if ($messageStack->size('header') > 0) {
             </div> <!--//TopMenu-->
             <div id="MainMenu">
                 <ul id="MenuBar1" class="MenuBarHorizontal">
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?products_model=ps3" title="Play Station 3">PS3</a>
+                    <li><a class="MenuBarItemSubmenu textleft" href="<?php echo tep_href_link('index.php?products_model=ps3') ?>" title="Play Station 3">PS3</a>
                      
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station Portable y Play Station Go" href="http://www.pikmas.com/tienda/index.php?products_model=psp">PSP</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station Portable y Play Station Go" href="<?php echo tep_href_link('index.php?products_model=psp') ?>">PSP</a>
 
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo Wii" href="http://www.pikmas.com/tienda/index.php?products_model=wii">Wii</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo Wii" href="<?php echo tep_href_link('index.php?products_model=wii') ?>">Wii</a>
                        
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo DS" href="http://www.pikmas.com/tienda/index.php?products_model=nds">NDS</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo DS" href="<?php echo tep_href_link('index.php?products_model=nds') ?>">NDS</a>
                        
                     </li>    
-<li><a class="MenuBarItemSubmenu lileft textleft" title="Xbox 360" href="http://www.pikmas.com/tienda/index.php?products_model=XBOX360">Xbox 360</a>
+<li><a class="MenuBarItemSubmenu lileft textleft" title="Xbox 360" href="<?php echo tep_href_link('index.php?products_model=XBOX360') ?>">Xbox 360</a>
                        
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station 2" href="http://www.pikmas.com/tienda/index.php?products_model=ps2">PS2</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station 2" href="<?php echo tep_href_link('index.php?products_model=ps2') ?>">PS2</a>
                         
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Ordenador" href="http://www.pikmas.com/tienda/index.php?products_model=pc">PC</a>
+                    <li><a class="MenuBarItemSubmenu textleft" title="Ordenador" href="<?php echo tep_href_link('index.php?products_model=pc') ?>">PC</a>
                        
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/seminuevos.php">Seminuevos</a>
+                    <li><a class="MenuBarItemSubmenu textleft" href="<?php echo tep_href_link('seminuevos.php') ?>">Seminuevos</a>
                         
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">Consolas</a>
+                    <li><a class="MenuBarItemSubmenu textleft" href="<?php echo tep_href_link('index.php?cPath=42&sort=2a&filter_id=') ?>">Consolas</a>
                         
                     </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?cPath=28">Accesorios</a>
+                    <li><a class="MenuBarItemSubmenu textleft" href="<?php echo tep_href_link('index.php?cPath=28') ?>">Accesorios</a>
                     </li>
                 </ul>
             </div>

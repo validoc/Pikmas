@@ -1,19 +1,6 @@
 <?php
-/*
-  $Id: product_info.php 1739 2007-12-20 00:52:16Z hpdl $
-
-  osCommerce, Open Source E-Commerce Solutions
-  http://www.oscommerce.com
-
-  Copyright (c) 2003 osCommerce
-
-  Released under the GNU General Public License
-*/
-
   require('includes/application_top.php');
-
   require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_PRODUCT_INFO);
-
   $product_check_query = tep_db_query("select count(*) as total from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "'");
   $product_check = tep_db_fetch_array($product_check_query);
 ?>
@@ -24,18 +11,12 @@
 <title><?php echo TITLE; ?></title>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
 <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
-<script src="js/lightbox.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 <link href="lightbox.css" rel="stylesheet" type="text/css" />
-
 <link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
-
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
-
-
 </head>
 <body>
 
@@ -231,12 +212,15 @@
                 <input type="hidden" value="true" name="resevar"/>
                 <td class="main" align="right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_image_submit('boton-reservar.gif', IMAGE_BUTTON_IN_CART, 'id="btn_reservation"'); ?></td>
                 <script>
+                  jQuery(document).ready(function(){
                   jQuery("#btn_reservation").click(function(){
                     var the_form = jQuery(this).parents('form');
                     var url_for_action = the_form.attr('action').replace("product_info.php", "form_reservation.php", "gi");
+                    url_for_action = url_for_action.replace("add_product", "reservation_al", "gi");
                     the_form.attr('action', url_for_action);
                     the_form.submit();
                     return false;
+                  });
                   });
                 </script>
                 <?php } else { ?>
@@ -282,13 +266,10 @@
 <tr>
 <!-- footer //-->
 <?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
-
 </tr>
 <!--<script type="text/javascript">
     var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 </script>-->
-
-
 </body>
 </html>
 <?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>

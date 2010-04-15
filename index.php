@@ -734,9 +734,6 @@ if(isset($HTTP_GET_VARS['products_model'])){
 
                                                         <td colspan="2">&nbsp;</td>
                                                     </tr>
-
-
-
                                                     <tr>
 
                                                         <td align="center"><?php if ($banner = tep_banner_exists('dynamic', 'baner1')) {
@@ -760,14 +757,7 @@ if(isset($HTTP_GET_VARS['products_model'])){
                                                                     }?></td>
                                                     </tr>
 
-                                                            <?php
-
-                                                        }
-
-
-                                                        ?>
-
-
+                                                            <?php } ?>
                                                 </table>
 
                                             </td>
