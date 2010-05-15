@@ -19,10 +19,10 @@ define('TABLE_HEADING_SHIPPING_ADDRESS', 'Direcci&oacute;n de Entrega');
 define('TEXT_CHOOSE_SHIPPING_DESTINATION', 'Escoja una direcci&oacute;n de su libreta para la entrega de los productos de este pedido.');
 define('TITLE_SHIPPING_ADDRESS', 'Direcci&oacute;n de Entrega:');
 
-define('TABLE_HEADING_SHIPPING_METHOD', 'Forma de Env&iacute;o');
+define('TABLE_HEADING_SHIPPING_METHOD', '');
 define('TEXT_CHOOSE_SHIPPING_METHOD', 'Seleccione la forma de env&iacute;o preferida para la entrega de este pedido.');
 define('TITLE_PLEASE_SELECT', 'Seleccione');
-define('TEXT_ENTER_SHIPPING_INFORMATION', 'Esta es la unica forma de env&iacute;o disponible para su pedido.');
+define('TEXT_ENTER_SHIPPING_INFORMATION', '');
 
 define('TABLE_HEADING_COMMENTS', 'Agregue Los Comentarios Sobre Su Orden');
 

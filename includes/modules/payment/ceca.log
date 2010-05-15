@@ -1,0 +1,392 @@
+LOG para modo $debug = true;
+
+http://www.pedroescribano.com
+seopedro@gmail.com
+escri22010-05-10 18:33:49 - Num Operacion: 7 
+Importe: 2250
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 18:33:49 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 18:33:49 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 18:33:49 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 18:33:49 - String: /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo 73644697 219119419 0000554043 00000003 7 2250 978 2 '' 
+ Resultado: 
+
+2010-05-10 21:09:14 - Num Operacion: 8 
+Importe: 2250
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 21:09:14 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 21:09:14 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 21:09:14 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 21:09:14 - String: /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo 73644697 219119419 0000554043 00000003 8 2250 978 2 '' 
+ Resultado: ÿ‹ásGd;à“R†žV¸g.Ù×
+
+2010-05-10 21:17:11 - Num Operacion: 9 
+Importe: 2250
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 21:17:11 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 21:17:11 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 21:17:11 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 21:17:11 - String: /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo 73644697 219119419 0000554043 00000003 9 2250 978 2 '' 
+ Resultado: e0c48964cf35cb1d36c8e82b3b5cdea513205ffa
+
+2010-05-10 21:27:47 - Num Operacion: 10 
+Importe: 2250
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 21:27:47 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 21:27:47 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 21:27:47 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 21:27:47 - String: 736446972191194190000554043000000031022509782checkout_process.phpcheckout_payment.php 
+ Resultado: 5460bea9596703b1703a036249fac873184b7698
+
+2010-05-10 21:27:47 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="10"><input type="hidden" name="Importe" value="2250"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Firma" value="5460bea9596703b1703a036249fac873184b7698"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=10&osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="Descripcion" value="reyes, marcelo (reyesmarcelo@gmail.com)">
+2010-05-10 21:33:03 - Num Operacion: 11 
+Importe: 2250
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 21:33:03 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 21:33:03 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 21:33:03 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 21:33:03 - String: 736446972191194190000554043000000031122509782http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=11&osCsid=66625bc9c74e26ff12f81e229f9685f5http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5 
+ Resultado: d6bd145a4470cbb70c896970b9717858c484b6ff
+
+2010-05-10 21:33:03 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="11"><input type="hidden" name="Importe" value="2250"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Firma" value="d6bd145a4470cbb70c896970b9717858c484b6ff"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=11&osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="Descripcion" value="reyes, marcelo (reyesmarcelo@gmail.com)">
+2010-05-10 21:38:11 - Num Operacion: 12 
+Importe: 2250
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 21:38:11 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 21:38:11 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 21:38:11 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 21:38:11 - String: 736446972191194190000554043000000031222509782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=12&osCsid=66625bc9c74e26ff12f81e229f9685f5http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5 
+ Resultado: f6711150ca22b09923deb2122286a3210555b1b1
+
+2010-05-10 21:38:11 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="12"><input type="hidden" name="Importe" value="2250"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Firma" value="f6711150ca22b09923deb2122286a3210555b1b1"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=12&osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="Descripcion" value="reyes, marcelo (reyesmarcelo@gmail.com)">
+2010-05-10 21:44:47 - Num Operacion: 13 
+Importe: 2250
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 21:44:47 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 21:44:47 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 21:44:47 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 21:44:47 - String: 736446972191194190000554043000000031322509782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=13&osCsid=66625bc9c74e26ff12f81e229f9685f5http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5 
+ Resultado: fcffc6f725916e2ca8bb7947c0425ccdc1571434
+
+2010-05-10 21:44:47 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="13"><input type="hidden" name="Importe" value="2250"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Firma" value="fcffc6f725916e2ca8bb7947c0425ccdc1571434"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=13&osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="Descripcion" value="reyes, marcelo (reyesmarcelo@gmail.com)">
+2010-05-10 21:46:05 - Num Operacion: 14 
+Importe: 34140
+ Description: sanchez, angel (ajsc50@gmail.com)
+
+2010-05-10 21:46:06 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 21:46:06 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 21:46:06 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 21:46:06 - String: 7364469721911941900005540430000000314341409782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=14&osCsid=47e5f7ad60d31c277f8a8a1681b7d4f9http://www.pikmas.com/tienda/checkout_payment.php?osCsid=47e5f7ad60d31c277f8a8a1681b7d4f9 
+ Resultado: 111a014febdb0913e0e1aca07a29b6c524dad25a
+
+2010-05-10 21:46:06 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="14"><input type="hidden" name="Importe" value="34140"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Firma" value="111a014febdb0913e0e1aca07a29b6c524dad25a"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=14&osCsid=47e5f7ad60d31c277f8a8a1681b7d4f9"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=47e5f7ad60d31c277f8a8a1681b7d4f9"><input type="hidden" name="Descripcion" value="sanchez, angel (ajsc50@gmail.com)">
+2010-05-10 22:23:28 - Num Operacion: 15 
+Importe: 2250
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 22:23:28 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 22:23:28 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 22:23:28 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 22:23:28 - String: 736446972191194190000554043000000031522509782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=15&osCsid=66625bc9c74e26ff12f81e229f9685f5http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5 
+ Resultado: 15d95895212c4a43b5cc39e4c05f7c63063f2157
+
+2010-05-10 22:23:28 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="15"><input type="hidden" name="Importe" value="2250"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="15d95895212c4a43b5cc39e4c05f7c63063f2157"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=15&osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=66625bc9c74e26ff12f81e229f9685f5"><input type="hidden" name="Descripcion" value="reyes, marcelo (reyesmarcelo@gmail.com)">
+2010-05-10 22:34:06 - Num Operacion: 16 
+Importe: 5745
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 22:34:06 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 22:34:06 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 22:34:06 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 22:34:06 - String: 436248442191194190000554043000000031657459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=16&osCsid=b635d7caba9801cddc6b110fe0cbcc98http://www.pikmas.com/tienda/checkout_payment.php?osCsid=b635d7caba9801cddc6b110fe0cbcc98 
+ Resultado: 827770ee3a022c73567d34306477bd90a4a653aa
+
+2010-05-10 22:34:06 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="16"><input type="hidden" name="Importe" value="5745"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="827770ee3a022c73567d34306477bd90a4a653aa"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=16&osCsid=b635d7caba9801cddc6b110fe0cbcc98"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=b635d7caba9801cddc6b110fe0cbcc98"><input type="hidden" name="Descripcion" value="reyes, marcelo (reyesmarcelo@gmail.com)">
+2010-05-10 22:36:38 - Num Operacion: 17 
+Importe: 5745
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 22:36:38 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 22:36:38 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 22:36:38 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 22:36:38 - String: 436248442191194190000554043000000031757459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=17&osCsid=b635d7caba9801cddc6b110fe0cbcc98http://www.pikmas.com/tienda/checkout_payment.php?osCsid=b635d7caba9801cddc6b110fe0cbcc98 
+ Resultado: f67f2559a1f10836e13ebe83e849cc219bd7aa4d
+
+2010-05-10 22:36:38 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="17"><input type="hidden" name="Importe" value="5745"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="f67f2559a1f10836e13ebe83e849cc219bd7aa4d"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=17&osCsid=b635d7caba9801cddc6b110fe0cbcc98"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=b635d7caba9801cddc6b110fe0cbcc98"><input type="hidden" name="Descripcion" value="reyes, marcelo (reyesmarcelo@gmail.com)">
+2010-05-10 23:10:27 - Num Operacion: 18 
+Importe: 4045
+ Description: reyes, marcelo (reyesmarcelo@gmail.com)
+
+2010-05-10 23:10:27 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 23:10:27 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 23:10:27 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 23:10:27 - String: 436248442191194190000554043000000031840459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=18&osCsid=b635d7caba9801cddc6b110fe0cbcc98http://www.pikmas.com/tienda/checkout_payment.php?osCsid=b635d7caba9801cddc6b110fe0cbcc98 
+ Resultado: a87b6fb03ed2739258d938d0a05dbfc305cff60b
+
+2010-05-10 23:10:27 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="18"><input type="hidden" name="Importe" value="4045"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="a87b6fb03ed2739258d938d0a05dbfc305cff60b"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=18&osCsid=b635d7caba9801cddc6b110fe0cbcc98"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=b635d7caba9801cddc6b110fe0cbcc98"><input type="hidden" name="Descripcion" value="reyes, marcelo (reyesmarcelo@gmail.com)">
+2010-05-10 23:25:52 - Num Operacion: 19 
+Importe: 745
+ Description: sanchez, angel (ajsc50@gmail.com)
+
+2010-05-10 23:25:52 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 23:25:52 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 23:25:52 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 23:25:52 - String: 73644697219119419000055404300000003197459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=19&osCsid=027b5dfeb85652692387da6efd132dbfhttp://www.pikmas.com/tienda/checkout_payment.php?osCsid=027b5dfeb85652692387da6efd132dbf 
+ Resultado: dbec171406237a991574ee363e78d3281ec570f3
+
+2010-05-10 23:25:52 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="19"><input type="hidden" name="Importe" value="745"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="dbec171406237a991574ee363e78d3281ec570f3"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=19&osCsid=027b5dfeb85652692387da6efd132dbf"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=027b5dfeb85652692387da6efd132dbf"><input type="hidden" name="Descripcion" value="sanchez, angel (ajsc50@gmail.com)">
+2010-05-10 23:26:07 - Num Operacion: 20 
+Importe: 745
+ Description: sanchez, angel (ajsc50@gmail.com)
+
+2010-05-10 23:26:07 - Moneda: 978 
+Idioma: 1
+
+2010-05-10 23:26:07 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-10 23:26:07 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-10 23:26:07 - String: 73644697219119419000055404300000003207459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=20&osCsid=027b5dfeb85652692387da6efd132dbfhttp://www.pikmas.com/tienda/checkout_payment.php?osCsid=027b5dfeb85652692387da6efd132dbf 
+ Resultado: c90214e479690af4cd81925db86e014fd44d659d
+
+2010-05-10 23:26:07 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="20"><input type="hidden" name="Importe" value="745"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="c90214e479690af4cd81925db86e014fd44d659d"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=20&osCsid=027b5dfeb85652692387da6efd132dbf"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=027b5dfeb85652692387da6efd132dbf"><input type="hidden" name="Descripcion" value="sanchez, angel (ajsc50@gmail.com)">
+2010-05-11 11:01:46 - Num Operacion: 21 
+Importe: 7445
+ Description: Revuelta Fernandez, Alejandro (alex@pikmas.com)
+
+2010-05-11 11:01:46 - Moneda: 978 
+Idioma: 1
+
+2010-05-11 11:01:46 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-11 11:01:46 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-11 11:01:46 - String: 736446972191194190000554043000000032174459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=21&osCsid=178c4e189bbf3ad7ba83b588af9561c2http://www.pikmas.com/tienda/checkout_payment.php?osCsid=178c4e189bbf3ad7ba83b588af9561c2 
+ Resultado: e099ee18716dbf02fd4900e45fb41fece0c4a63e
+
+2010-05-11 11:01:46 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="21"><input type="hidden" name="Importe" value="7445"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="e099ee18716dbf02fd4900e45fb41fece0c4a63e"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=21&osCsid=178c4e189bbf3ad7ba83b588af9561c2"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=178c4e189bbf3ad7ba83b588af9561c2"><input type="hidden" name="Descripcion" value="Revuelta Fernandez, Alejandro (alex@pikmas.com)">
+2010-05-11 11:02:32 - Num Operacion: 22 
+Importe: 7445
+ Description: Revuelta Fernandez, Alejandro (alex@pikmas.com)
+
+2010-05-11 11:02:32 - Moneda: 978 
+Idioma: 1
+
+2010-05-11 11:02:32 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-11 11:02:32 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-11 11:02:32 - String: 736446972191194190000554043000000032274459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=22&osCsid=178c4e189bbf3ad7ba83b588af9561c2http://www.pikmas.com/tienda/checkout_payment.php?osCsid=178c4e189bbf3ad7ba83b588af9561c2 
+ Resultado: 321ce8c478186d17399190d5cca197277e4843e5
+
+2010-05-11 11:02:32 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="22"><input type="hidden" name="Importe" value="7445"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="321ce8c478186d17399190d5cca197277e4843e5"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=22&osCsid=178c4e189bbf3ad7ba83b588af9561c2"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=178c4e189bbf3ad7ba83b588af9561c2"><input type="hidden" name="Descripcion" value="Revuelta Fernandez, Alejandro (alex@pikmas.com)">
+2010-05-11 23:11:09 - Num Operacion: 23 
+Importe: 1850
+ Description: CASADO DEL RIO, ISRAEL (israelcasado@pikmas.com)
+
+2010-05-11 23:11:09 - Moneda: 978 
+Idioma: 1
+
+2010-05-11 23:11:09 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-11 23:11:09 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-11 23:11:09 - String: 736446972191194190000554043000000032318509782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=23&osCsid=ec74113f8961c6c6047b3802ddd93347http://www.pikmas.com/tienda/checkout_payment.php?osCsid=ec74113f8961c6c6047b3802ddd93347 
+ Resultado: d9aec8c097b722113759cc00989c23763dccc4c8
+
+2010-05-11 23:11:09 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="23"><input type="hidden" name="Importe" value="1850"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="d9aec8c097b722113759cc00989c23763dccc4c8"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=23&osCsid=ec74113f8961c6c6047b3802ddd93347"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=ec74113f8961c6c6047b3802ddd93347"><input type="hidden" name="Descripcion" value="CASADO DEL RIO, ISRAEL (israelcasado@pikmas.com)">
+2010-05-12 09:39:07 - Num Operacion: 24 
+Importe: 2245
+ Description: CASADO DEL RIO, ISRAEL (israelcasado@pikmas.com)
+
+2010-05-12 09:39:07 - Moneda: 978 
+Idioma: 1
+
+2010-05-12 09:39:07 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-12 09:39:07 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-12 09:39:07 - String: 736446972191194190000554043000000032422459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=24&osCsid=0a2f8ceb5d2b8b000faf9fa89425c307http://www.pikmas.com/tienda/checkout_payment.php?osCsid=0a2f8ceb5d2b8b000faf9fa89425c307 
+ Resultado: 6ffb60c14a3df2b68a3d79538d0305dd922ed770
+
+2010-05-12 09:39:07 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="24"><input type="hidden" name="Importe" value="2245"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="6ffb60c14a3df2b68a3d79538d0305dd922ed770"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=24&osCsid=0a2f8ceb5d2b8b000faf9fa89425c307"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=0a2f8ceb5d2b8b000faf9fa89425c307"><input type="hidden" name="Descripcion" value="CASADO DEL RIO, ISRAEL (israelcasado@pikmas.com)">
+2010-05-12 09:39:46 - Num Operacion: 25 
+Importe: 745
+ Description: CASADO DEL RIO, ISRAEL (israelcasado@pikmas.com)
+
+2010-05-12 09:39:46 - Moneda: 978 
+Idioma: 1
+
+2010-05-12 09:39:46 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-12 09:39:46 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-12 09:39:46 - String: 73644697219119419000055404300000003257459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=25&osCsid=0a2f8ceb5d2b8b000faf9fa89425c307http://www.pikmas.com/tienda/checkout_payment.php?osCsid=0a2f8ceb5d2b8b000faf9fa89425c307 
+ Resultado: 964a4820e35c64581c2ab6833aec6741f7b1528e
+
+2010-05-12 09:39:46 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="25"><input type="hidden" name="Importe" value="745"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="964a4820e35c64581c2ab6833aec6741f7b1528e"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=25&osCsid=0a2f8ceb5d2b8b000faf9fa89425c307"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=0a2f8ceb5d2b8b000faf9fa89425c307"><input type="hidden" name="Descripcion" value="CASADO DEL RIO, ISRAEL (israelcasado@pikmas.com)">
+2010-05-12 13:00:56 - Num Operacion: 26 
+Importe: 645
+ Description: vivanco herrero, kathia (kathiavivanco5@hotmail.com)
+
+2010-05-12 13:00:56 - Moneda: 978 
+Idioma: 1
+
+2010-05-12 13:00:56 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-12 13:00:56 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-12 13:00:56 - String: 73644697219119419000055404300000003266459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=26&osCsid=4adfee089831f25966a0848de6b15d4ehttp://www.pikmas.com/tienda/checkout_payment.php?osCsid=4adfee089831f25966a0848de6b15d4e 
+ Resultado: 830a9e329cb213c30dcf15e2ff94ff9f1fa8739f
+
+2010-05-12 13:00:56 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="26"><input type="hidden" name="Importe" value="645"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="830a9e329cb213c30dcf15e2ff94ff9f1fa8739f"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=26&osCsid=4adfee089831f25966a0848de6b15d4e"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=4adfee089831f25966a0848de6b15d4e"><input type="hidden" name="Descripcion" value="vivanco herrero, kathia (kathiavivanco5@hotmail.com)">
+2010-05-12 17:13:42 - Num Operacion: 27 
+Importe: 545
+ Description: vivanco herrero, kathia (kathiavivanco5@hotmail.com)
+
+2010-05-12 17:13:42 - Moneda: 978 
+Idioma: 1
+
+2010-05-12 17:13:42 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-12 17:13:42 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-12 17:13:42 - String: 73644697219119419000055404300000003275459782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=27&osCsid=7b710eb3894776ecd08cea09c6168cb8http://www.pikmas.com/tienda/checkout_payment.php?osCsid=7b710eb3894776ecd08cea09c6168cb8 
+ Resultado: 1ccbf92b0a7fbae0fd5b70b1725bfe8da6180b3b
+
+2010-05-12 17:13:42 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="27"><input type="hidden" name="Importe" value="545"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="1ccbf92b0a7fbae0fd5b70b1725bfe8da6180b3b"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=27&osCsid=7b710eb3894776ecd08cea09c6168cb8"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=7b710eb3894776ecd08cea09c6168cb8"><input type="hidden" name="Descripcion" value="vivanco herrero, kathia (kathiavivanco5@hotmail.com)">
+2010-05-15 11:15:13 - Num Operacion: 28 
+Importe: 895
+ Description: Revuelta Fernandez, Alejandro (alex@pikmas.com)
+
+2010-05-15 11:15:13 - Moneda: 978 
+Idioma: 1
+
+2010-05-15 11:15:13 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-15 11:15:13 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-15 11:15:13 - String: 73644697219119419000055404300000003288959782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=28&osCsid=b79526a387e4d2bd891752a4c61e1eefhttp://www.pikmas.com/tienda/checkout_payment.php?osCsid=b79526a387e4d2bd891752a4c61e1eef 
+ Resultado: f599f7674d3938dbf137ae38803bb60f919a2e81
+
+2010-05-15 11:15:13 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="28"><input type="hidden" name="Importe" value="895"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="f599f7674d3938dbf137ae38803bb60f919a2e81"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=28&osCsid=b79526a387e4d2bd891752a4c61e1eef"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=b79526a387e4d2bd891752a4c61e1eef"><input type="hidden" name="Descripcion" value="Revuelta Fernandez, Alejandro (alex@pikmas.com)">
+2010-05-15 11:16:52 - Num Operacion: 29 
+Importe: 895
+ Description: Revuelta Fernandez, Alejandro (alex@pikmas.com)
+
+2010-05-15 11:16:52 - Moneda: 978 
+Idioma: 1
+
+2010-05-15 11:16:52 - /web/htdocs/www.pikmas.com/home/tienda//includes/modules/payment/calculo  --> Calculo existe
+
+2010-05-15 11:16:52 - MerchantID: 219119419 
+ AcquirerBIN: 0000554043
+ Terminal: 00000003
+
+2010-05-15 11:16:52 - String: 73644697219119419000055404300000003298959782SHA1http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=29&osCsid=b79526a387e4d2bd891752a4c61e1eefhttp://www.pikmas.com/tienda/checkout_payment.php?osCsid=b79526a387e4d2bd891752a4c61e1eef 
+ Resultado: 9694299f0716b5a2b80de43eb25a601f15f0af60
+
+2010-05-15 11:16:52 - <input type="hidden" name="MerchantID" value="219119419"><input type="hidden" name="AcquirerBIN" value="0000554043"><input type="hidden" name="TerminalID" value="00000003"><input type="hidden" name="Num_operacion" value="29"><input type="hidden" name="Importe" value="895"><input type="hidden" name="TipoMoneda" value="978"><input type="hidden" name="Exponente" value="2"><input type="hidden" name="Idioma" value="1"><input type="hidden" name="Pago_soportado" value="SSL"><input type="hidden" name="Cifrado" value="SHA1"><input type="hidden" name="Firma" value="9694299f0716b5a2b80de43eb25a601f15f0af60"><input type="hidden" name="URL_OK" value="http://www.pikmas.com/tienda/checkout_process.php?Num_operacion=29&osCsid=b79526a387e4d2bd891752a4c61e1eef"><input type="hidden" name="URL_NOK" value="http://www.pikmas.com/tienda/checkout_payment.php?osCsid=b79526a387e4d2bd891752a4c61e1eef"><input type="hidden" name="Descripcion" value="Revuelta Fernandez, Alejandro (alex@pikmas.com)">

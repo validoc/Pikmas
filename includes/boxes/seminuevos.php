@@ -23,7 +23,10 @@ if(isset($extra)) {
         <table border="0" cellspacing="0" width="100%" cellpadding="0">
             <tr>
                 <td width="10px"><img border="0" alt="" src="images/infobox/corner_left.gif"> </td>
-                <td width="100%" height="14" class="infoBoxHeading">Seminuevos</td>
+                <td width="100%" height="14" class="infoBoxHeading">
+<a class="h1link" href="http://www.pikmas.com/tienda/seminuevos.php" style="border-top: medium none; display: inline-block; padding: 5px;">Seminuevos</a>
+
+</td>
                 <td><img border="0" alt="" src="images/infobox/corner_right.gif"> </td>
             </tr>
         </table>
@@ -34,14 +37,16 @@ if(isset($extra)) {
                             <td><img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" /></td>
                         </tr>
                         <tr>
-                            <td class="boxText"><ul>
+                            <td class="boxText">
+                            <p style="font-size:12px; padding:5px; line-height:1em; background:#f4f5f5"><b>NOTA
+</b><br/><a href="http://www.pikmas.com/tienda/contact_us.php" target="_parent" style="text-transform:none">Consulta la disponibilidad del producto, puede tardar más de 24 horas en llegar a su destino.</a></p><ul>
                                     <?php
                                     while ($seminuevos = tep_db_fetch_array($seminuevos_query)) { ?>
                                     <li class="consoleType">
                                         <table>
                                             <tr>
                                                 <td>
-                                                        <?php echo(tep_image(DIR_WS_IMAGES . $seminuevos['products_image'], $seminuevos['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT))?>
+                                                        <?php echo( '<a  href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $seminuevos['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $seminuevos['products_image'], $seminuevos['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>')?>
                                                 </td>
                                                 <td>
                                                         <?php echo('<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $seminuevos['products_id']) . '">' . $seminuevos['products_name']. '</a>')?>
@@ -59,7 +64,7 @@ if(isset($extra)) {
                                     </li>
                                         <?php } ?>
                                 </ul>
-                                <a class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=29#" style="border-top: medium none; display: inline-block; padding: 5px;">Ver todos los seminuevos &rarr; </a>
+                                <a class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/seminuevos.php" style="border-top: medium none; display: inline-block; padding: 5px;"><img src="../tienda/images/vermas.png" border="0"/> </a>
                             </td></tr><tr>
                             <td>
                                 <img src="images/pixel_trans.gif" border="0" alt="" width="100%" height="1" />

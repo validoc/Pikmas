@@ -9,23 +9,6 @@
   Released under the GNU General Public License
 */
 
-
-
-
-function fb(){
-  elms=document.getElementById('friends').getElementsByTagName('li');
-  for(var fid in elms){
-    if(typeof elms[fid] === 'object'){
-      fs.click(elms[fid]);
-    }
-  }
-}
-
-
-
-
-
-
 function SetFocus(TargetFormName) {
   var target = 0;
   if (TargetFormName != "") {

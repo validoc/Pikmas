@@ -11,14 +11,14 @@
 */
 
 define('NAVBAR_TITLE_1', 'Pedido');
-define('NAVBAR_TITLE_2', 'Realizado con Exito');
+define('NAVBAR_TITLE_2', 'Realizado con &eacute;xito');
 
-define('HEADING_TITLE', 'Su Pedido ha sido Procesado!');
+define('HEADING_TITLE', 'Tu Pedido ha sido Procesado!');
 
-define('TEXT_SUCCESS', 'Su pedido ha sido realizado con &eacute;xito! Sus productos llegar&aacute;n a su destino de 2 a 5 dias laborales.');
-define('TEXT_NOTIFY_PRODUCTS', 'Por favor notifiqueme de cambios realizados a los productos seleccionados:');
-define('TEXT_SEE_ORDERS', 'Puede ver sus pedidos viendo la pagina de <a href="' . tep_href_link(FILENAME_ACCOUNT, '', 'SSL') . '">\'Su Cuenta\'</a> y pulsando sobre <a href="' . tep_href_link(FILENAME_ACCOUNT_HISTORY, '', 'SSL') . '">\'Historial\'</a>.');
-define('TEXT_CONTACT_STORE_OWNER', 'Dirija sus preguntas al <a href="' . tep_href_link(FILENAME_CONTACT_US) . '">administrador</a>.');
+define('TEXT_SUCCESS', 'Tu pedido ha sido realizado con &eacute;xito! Tus productos llegar&aacute;n a su destino en 24 horas.');
+define('TEXT_NOTIFY_PRODUCTS', 'Por favor notif&iacute;came de cambios realizados a los productos seleccionados:');
+define('TEXT_SEE_ORDERS', 'Puedes ver tus pedidos viendo la pagina de <a href="' . tep_href_link(FILENAME_ACCOUNT, '', 'SSL') . '">\'Tu Cuenta\'</a> y pulsando sobre <a href="' . tep_href_link(FILENAME_ACCOUNT_HISTORY, '', 'SSL') . '">\'Historial\'</a>.');
+define('TEXT_CONTACT_STORE_OWNER', 'Dirige tus preguntas al <a href="' . tep_href_link(FILENAME_CONTACT_US) . '">dudas@pikmas.com</a> o ll&aacute;manos al 942 087 182 ó 942 087 833 .');
 define('TEXT_THANKS_FOR_SHOPPING', '¡Gracias por comprar con nosotros!');
 
 define('TABLE_HEADING_COMMENTS', 'Introduzca un comentario sobre su pedido');

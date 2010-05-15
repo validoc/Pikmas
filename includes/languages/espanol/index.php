@@ -16,7 +16,7 @@ define('TABLE_HEADING_UPCOMING_PRODUCTS', 'Pr&oacute;ximamente');
 define('TABLE_HEADING_DATE_EXPECTED', 'Lanzamiento');
 
 if ( ($category_depth == 'products') || (isset($HTTP_GET_VARS['manufacturers_id'])) ) {
-  define('HEADING_TITLE', 'A ver que tenemos aqui');
+  define('HEADING_TITLE', '&nbsp;');
   define('TABLE_HEADING_IMAGE', '');
   define('TABLE_HEADING_MODEL', 'Modelo');
   define('TABLE_HEADING_PRODUCTS', 'Productos');
@@ -25,7 +25,7 @@ if ( ($category_depth == 'products') || (isset($HTTP_GET_VARS['manufacturers_id'
   define('TABLE_HEADING_PRICE', 'Precio');
   define('TABLE_HEADING_WEIGHT', 'Peso');
   define('TABLE_HEADING_BUY_NOW', 'Compre Ahora');
-  define('TEXT_NO_PRODUCTS', 'No hay productos en esta categoria.');
+  define('TEXT_NO_PRODUCTS', 'No hay productos en esta categor&iacute;a.');
   define('TEXT_NO_PRODUCTS2', 'No hay productos de este fabricante.');
   define('TEXT_NUMBER_OF_PRODUCTS', 'N&uacute;mero de Productos: ');
   define('TEXT_SHOW', '<b>Mostrar:</b>');
@@ -34,8 +34,8 @@ if ( ($category_depth == 'products') || (isset($HTTP_GET_VARS['manufacturers_id'
   define('TEXT_ALL_CATEGORIES', 'Todas');
   define('TEXT_ALL_MANUFACTURERS', 'Todos');
 } elseif ($category_depth == 'top') {
-  define('HEADING_TITLE', '&iquest;Que hay de nuevo por aqui?');
+  define('HEADING_TITLE', '&nbsp;');
 } elseif ($category_depth == 'nested') {
-  define('HEADING_TITLE', 'Categorias');
+  define('HEADING_TITLE', 'Categor&iacute;as');
 }
 ?>

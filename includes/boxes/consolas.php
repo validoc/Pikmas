@@ -39,7 +39,9 @@ if(isset($extra)) {
         <table border="0" cellspacing="0" width="180px"  cellpadding="0">
             <tr>
                 <td width="10px"><img border="0" alt="" src="images/infobox/corner_left.gif"> </td>
-                <td width="100%" height="14" class="infoBoxHeading">Consolas</td>
+                <td width="100%" height="14" class="infoBoxHeading"> <a class="h1link"  href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">
+Consolas</a>
+</td>
                 <td><img border="0" alt="" src="images/infobox/corner_right.gif"> </td>
             </tr>
         </table>
@@ -61,7 +63,7 @@ if(isset($extra)) {
                                                     <table>
                                                         <tr>
                                                             <td>
-                                                                    <?php echo(tep_image(DIR_WS_IMAGES . $seminuevos['products_image'], $seminuevos['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT))?>
+                                                                    <?php echo('<a  href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $seminuevos['products_id']) . '">' . tep_image(DIR_WS_IMAGES . $seminuevos['products_image'], $seminuevos['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>')?>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -76,7 +78,7 @@ if(isset($extra)) {
                                                         <tr>
                                                             <td>
                                                                 <span style="font-size:14px; color:#fe0000">
-                                                                    <b<?php echo $currencies->display_price($seminuevos['products_price'], tep_get_tax_rate($seminuevos['products_tax_class_id'])) ?></b>
+                                                                    <b><?php echo $currencies->display_price($seminuevos['products_price'], tep_get_tax_rate($seminuevos['products_tax_class_id'])) ?></b>
                                                                 </span>
                                                             </td>
                                                         </tr>
@@ -94,7 +96,7 @@ if(isset($extra)) {
                                     </li>
                                         <?php } ?>
                                 </ul>
-                                <a class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">Ver todas las consolas  	&rarr; </a>
+                                <a class="upcommingProductsVerMas" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id="><img src="../tienda/images/vermas.png" border="0"/></a>
                             </td>
                         </tr>
                         <tr>

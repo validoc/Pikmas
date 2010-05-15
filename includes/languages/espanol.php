@@ -182,7 +182,7 @@ define('ENTRY_EMAIL_ADDRESS_TEXT', '*');
 define('ENTRY_STREET_ADDRESS', 'Direcci&oacute;n:');
 define('ENTRY_STREET_ADDRESS_ERROR', 'Su direcci&oacute;n debe tener al menos ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' letras.');
 define('ENTRY_STREET_ADDRESS_TEXT', '*');
-define('ENTRY_SUBURB', 'Suburbio');
+define('ENTRY_SUBURB', 'Calle');
 define('ENTRY_SUBURB_ERROR', '');
 define('ENTRY_SUBURB_TEXT', '');
 define('ENTRY_POST_CODE', 'C&oacute;digo Postal:');

@@ -26,6 +26,6 @@ define('MY_ORDERS_TITLE', 'Mis Pedidos');
 define('MY_ORDERS_VIEW', 'Ver los pedidos que he realizado.');
 
 define('EMAIL_NOTIFICATIONS_TITLE', 'Notificaciones por E-Mail');
-define('EMAIL_NOTIFICATIONS_NEWSLETTERS', 'Subscribirse or no a los boletines.');
+define('EMAIL_NOTIFICATIONS_NEWSLETTERS', 'Subscribirse o no a los boletines.');
 define('EMAIL_NOTIFICATIONS_PRODUCTS', 'Ver o modificar mis notificaciones de productos.');
 ?>

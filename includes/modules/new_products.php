@@ -79,7 +79,7 @@
 	  if ($col > 0 || $row > 0) {
 		echo '<div class="TabbedPanelsContent"><table width="100%"><tr class="bloquenovedades"><td align="center" class="smallText" width="100%" valign="top">';
 		new contentBox($info_box_contents);		
-		echo '</td></tr><tr><td class="upcommingProductsVerMas"><a href="index.php?products_model='.$modelo['products_model'].'">Ver todas las novedades '.$modelo['products_model'].' &rarr;</a></td></tr></table></div>';
+		echo '</td></tr><tr><td class="upcommingProductsVerMas" style="text-transform:uppercase; text-shadow: 1px 1px #fff"><a href="index.php?products_model='.$modelo['products_model'].'"> '.$modelo['products_model'].' <img src="../tienda/images/vermas.png" align="absmiddle" border="0"/> </a></td></tr></table></div>';
 	  }
   }
   echo '</div></td></tr></table>';
