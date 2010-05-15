@@ -112,7 +112,7 @@ function rowOutEffect(object) {
                     ?>
                   <tr class="moduleRow" onMouseOver="rowOverEffect(this)" onMouseOut="rowOutEffect(this)" onClick="document.location.href='<?php echo tep_href_link(FILENAME_ACCOUNT_HISTORY_INFO, 'order_id=' . $orders['orders_id'], 'SSL'); ?>'">
                       <td class="main mainStrong" width="100">
-                        <?php echo '#' . $orders['orders_id']; ?>
+                        <?php echo 'N&deg;' . $orders['orders_id']; ?>
                       </td>
                       <td>
                           <table class="tablePedido">

@@ -936,10 +936,15 @@ select:focus {
 	outline: 2px solid #fec707;
 	color:#000
 }
+
+
+
 .bloquenovedades table {
 	text-align:center;
 }
+
 .bloquenovedades a {
 font-size:13px;
 color:#333333
+
 }

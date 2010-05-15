@@ -20,7 +20,6 @@
   require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_SHOPPING_CART);
 
   $breadcrumb->add(NAVBAR_TITLE, tep_href_link(FILENAME_SHOPPING_CART));
-  
 ?>
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
@@ -119,13 +118,13 @@
       $cur_row = sizeof($info_box_contents) - 1;
 
       $info_box_contents[$cur_row][] = array('align' => 'center',
-                                             'params' => 'class="productListing-data" valign="top"',
+                                             'params' => 'class="productListing-data"',
                                              'text' => tep_draw_checkbox_field('cart_delete[]', $products[$i]['id']));
 
-      $products_name = '<table border="0" cellspacing="2" cellpadding="2">' .
+      $products_name = '<table border="0" cellspacing="2" cellpadding="2" width="100%">' .
                        '  <tr>' .
                        '    <td class="productListing-data" align="center"><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $products[$i]['id']) . '">' . tep_image(DIR_WS_IMAGES . $products[$i]['image'], $products[$i]['name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a></td>' .
-                       '    <td class="productListing-data" valign="top"><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $products[$i]['id']) . '"><b>' . $products[$i]['name'] . '</b></a>';
+                       '    <td class="productListing-data" align="center" ><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $products[$i]['id']) . '"><b>' . $products[$i]['name'] . '</b></a>';
 
       if (STOCK_CHECK == 'true') {
         $stock_check = tep_check_stock($products[$i]['id'], $products[$i]['quantity']);
@@ -151,11 +150,11 @@
                                              'text' => $products_name);
 
       $info_box_contents[$cur_row][] = array('align' => 'center',
-                                             'params' => 'class="productListing-data" valign="top"',
+                                             'params' => 'class="productListing-data" ',
                                              'text' => tep_draw_input_field('cart_quantity[]', $products[$i]['quantity'], 'size="4"') . tep_draw_hidden_field('products_id[]', $products[$i]['id']));
 
       $info_box_contents[$cur_row][] = array('align' => 'right',
-                                             'params' => 'class="productListing-data" valign="top"',
+                                             'params' => 'class="productListing-data"  align="center" ',
                                              'text' => '<b>' . $currencies->display_price($products[$i]['final_price'], tep_get_tax_rate($products[$i]['tax_class_id']), $products[$i]['quantity']) . '</b>');
     }
 
@@ -220,7 +219,7 @@
         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
       </tr>
       <tr>
-        <td align="right"style="padding-right: 50px;"><?php echo TEXT_ALTERNATIVE_CHECKOUT_METHODS; ?></td>
+        <td align="right"style="padding-right: 50px;"><?php //echo TEXT_ALTERNATIVE_CHECKOUT_METHODS; ?></td>
       </tr>
 <?php
       reset($initialize_checkout_methods);
@@ -230,7 +229,7 @@
         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
       </tr>
       <tr>
-        <td align="right"><?php echo $value; ?></td>
+        <td align="right"><?php //echo $value; ?></td>
       </tr>
 <?php
       }

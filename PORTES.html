@@ -82,94 +82,36 @@
                 <div class="clearleft"></div>
             </div> <!--//TopMenu-->
             <div id="MainMenu">
-                <ul id="MenuBar1" class="MenuBarHorizontal">
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?products_model=ps3" title="Play Station 3">PS 3</a>
-                        <ul >
-                            <li><a href="http://www.pikmas.com/tienda/product_info.php?cPath=22_36&products_id=252">Juegos</a></li>
-
-                            <li><a href="#">Seminuevos</a></li>
-                            <li><a href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=14">Consolas</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station Portable y Play Station Go" href="http://www.pikmas.com/tienda/index.php?products_model=psp">PSP</a>
-
-                        <ul>
-                            <li><a href="#">Juegos</a></li>
-                            <li><a href="#">Seminuevos</a></li>
-                            <li><a href="#">Consolas</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo Wii" href="http://www.pikmas.com/tienda/index.php?products_model=wii">Wii</a>
-                        <ul>
-                            <li><a href="#">Juegos</a></li>
-                            <li><a href="#">Seminuevos</a></li>
-                            <li><a href="#">Consolas</a></li>
-                            <li><a href="#">Accesorios</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Nintendo DS" href="http://www.pikmas.com/tienda/index.php?products_model=nds">NDS</a>
-                        <ul>
-                            <li><a href="#">Juegos</a></li>
-                            <li><a href="#">Seminuevos</a></li>
-                            <li><a href="#">Consolas</a></li>
-
-                            <li><a href="#">Accesorios</a></li>
-                        </ul>
-                    </li>    <li><a class="MenuBarItemSubmenu lileft textleft" title="Xbox 360" href="http://www.pikmas.com/tienda/index.php?products_model=XBOX360">Xbox 360</a>
-                        <ul>
-                            <li><a href="#">Juegos</a></li>
-                            <li><a href="#">Seminuevos</a></li>
-
-                            <li><a href="#">Consolas</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Play Station 2" href="http://www.pikmas.com/tienda/index.php?products_model=ps2">PS 2</a>
-                        <ul>
-                            <li><a href="#">Juegos</a></li>
-
-                            <li><a href="#">Seminuevos</a></li>
-                            <li><a href="#">Consolas</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="MenuBarItemSubmenu textleft" title="Ordenador" href="http://www.pikmas.com/tienda/index.php?products_model=pc">PC</a>
-                        <ul>
-
-                            <li><a href="#">Juegos</a></li>
-                            <li><a href="#">Seminuevos</a></li>
-                            <li><a href="#">Consolas</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/seminuevos.php">Seminuevos</a>
-
-                        <ul>
-                            <li><a href="http://www.pikmas.com/tienda/product_info.php?cPath=29&products_id=676">Xbox360</a></li>
-                            <li><a href="#">Wii</a></li>
-                            <li><a href="http://www.pikmas.com/tienda/product_info.php?products_id=901">PS3</a></li>
-                            <li><a href="#">PS2</a></li>
-                            <li><a href="http://www.pikmas.com/tienda/product_info.php?products_id=902">PSP</a></li>
-
-                            <li><a href="#">PC</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=">Consolas</a>
-                        <ul>
-                            <li><a href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=16">Xbox360</a></li>
-                            <li><a href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=15">Wii NDS</a></li>
-
-                            <li><a href="http://www.pikmas.com/tienda/index.php?cPath=42&sort=2a&filter_id=14">PS3 PS2 PSP</a></li>
-                            <li><a href="#">PS2</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="MenuBarItemSubmenu textleft" href="http://www.pikmas.com/tienda/index.php?cPath=28">Accesorios</a>
-                    </li>
-                </ul>
+   <!-- Begin Publishing Scripts of Flash Menu pikmasmenu -->
+<div id="fm_placeholder_pikmasmenu" style="width: 950px; height: 36px ">
+Loading Flash Menu</div><script type="text/javascript" defer>//<![CDATA[
+var fm_pikmasmenu = function() {
+  function getPos() {
+    var p=[0,0]; var e=document.getElementById('fm_placeholder_pikmasmenu');
+    do { p[0]+=e.offsetTop; p[1]+=e.offsetLeft; } while (e=e.offsetParent); return p; }
+  function move() {
+    var p=getPos(); var m=document.getElementById('fm_wrapper_pikmasmenu'); m.style.top=p[0]+'px'; m.style.left=p[1]+'px'; }
+  var create = function() {
+    var s; if (document.all && !window.opera) {
+      s='<object id="fm_menu_pikmasmenu" width="950px" height="36px" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" '
+        +'codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0">'
+        +'<param name="quality" value="high" /><param name="scale" value="noscale" /><param name="salign" value="LT" />'
+        +'<param name="movie" value="pikmasmenu.swf" /><param name="flashvars" value="callback=fm_pikmasmenu">'
+        +'<param name="menu" value="false" /><param name="wmode" value="transparent" /></object>'; }
+    else {
+      s='<embed type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" '
+        +'id="fm_menu_pikmasmenu" width="950px" height="36px" src="pikmasmenu.swf" wmode="transparent" '
+        +'flashvars="callback=fm_pikmasmenu" quality="high" scale="noscale" menu="false" salign="LT" />'; }
+    var p=getPos(); var m=document.createElement('div'); m.id='fm_wrapper_pikmasmenu'; m.style.position='absolute';
+    m.style.zIndex='100'; m.style.top=p[0]+'px'; m.style.left=p[1]+'px'; m.innerHTML=s;
+    document.body.insertBefore(m, document.body.firstChild); setInterval(move, 500); }(); 
+  return {
+    expand: function() { 
+      document.getElementById('fm_menu_pikmasmenu').style.height='219px'; },
+    collapse: function() {
+      document.getElementById('fm_menu_pikmasmenu').style.height='36px';
+ }};}();//]]></script>
+<!-- End Publishing Scripts of Flash Menu pikmasmenu -->
 
             </div>
             <!--//MainMenu-->

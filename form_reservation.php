@@ -1,4 +1,14 @@
 <?php
+/*
+  $Id: product_info.php 1739 2007-12-20 00:52:16Z hpdl $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+*/
 
 require('includes/application_top.php');
 require('includes/classes/http_client.php');
@@ -92,7 +102,8 @@ if(!$mail->Send()) {
               <!-- left_navigation_eof //-->
             </table></td>
           <!-- body_text //-->
-          <td width="100%" valign="top"><?php echo tep_draw_form('cart_quantity', tep_href_link(FILENAME_PRODUCT_INFO, tep_get_all_get_params(array('action')) . 'action=add_product')); ?><table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <td width="100%" valign="top"><?php echo tep_draw_form('cart_quantity', tep_href_link(FILENAME_PRODUCT_INFO, tep_get_all_get_params(array('action')) . 'action=add_product')); ?>
+          <table border="0" width="100%" cellspacing="0" cellpadding="0">
               <tr>
                 <td><?php new infoBox(array(array('text' => 'Nuevo pedido de reserva confirmado'))); ?></td>
               </tr>
@@ -100,19 +111,17 @@ if(!$mail->Send()) {
                 <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
               </tr>
               <tr>
-                <td><table border="0" width="100%" cellspacing="1" cellpadding="2" class="infoBox">
-                    <tr class="infoBoxContents">
+                <td>
+                <table border="0" width="100%" cellspacing="1" cellpadding="2">
+                    <tr>
                       <td>
-                        <table border="0" width="100%" cellspacing="0" cellpadding="2">
+                        <table border="0" width="100%" cellspacing="0" cellpadding="10">
                           <tr>
-                            <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
-                            <td align="right">Muchas Gracias se envio una solicitud de reserva del producto, le responderemos lo mas pronto posible.
-
+                            <td align="left">Muchas Gracias se envi&oacute; una solicitud de reserva del producto, le responderemos lo m&aacute;s pronto posible para confirmar su reserva.
                             <p>
                               <?php echo $message_email; ?>
                             </p>
                             </td>
-                            <td width="10"><?php echo tep_draw_separator('pixel_trans.gif', '10', '1'); ?></td>
                           </tr>
                         </table></td>
                     </tr>

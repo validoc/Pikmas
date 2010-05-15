@@ -163,7 +163,7 @@ function popupWindow(url) {
   }
 ?>
       <tr>
-        <td>
+        <td class="adsearch">
 <?php
   $info_box_contents = array();
   $info_box_contents[] = array('text' => HEADING_SEARCH_CRITERIA);

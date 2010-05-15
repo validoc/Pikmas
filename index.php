@@ -145,16 +145,19 @@ if(isset($HTTP_GET_VARS['products_model'])){
                             <div class="belt">
 
                                 <div class="panel">
-                                    <img src="images/banners_home/bio-shock-2.png" border="0"/></div>
+                                    <img src="slides/slide1.jpg" border="0"/></div>
 
                                 <div class="panel">
-                                    <img src="images/banners_home/final-fantasy-xiii.png" border="0"/></div>
+                                    <img src="slides/slide2.jpg" border="0"/></div>
 
                                 <div class="panel">
-                                    <img src="images/banners_home/heavy-rain.png" border="0"/></div>
+                                    <img src="slides/slide3.jpg" border="0"/></div>
 
                                 <div class="panel">
-                                    <img src="images/banners_home/modern-warfare-2.png" border="0"/></div>
+                                    <img src="slides/slide4.jpg" border="0"/></div>
+                                    
+                              <div class="panel">
+                                    <img src="slides/slide5.jpg" border="0"/></div>
                             </div>
                         </div>
                         <div id="mygallery-paginate">
@@ -438,7 +441,7 @@ if(isset($HTTP_GET_VARS['products_model'])){
 
                                                 <table border="0" width="100%" cellspacing="0" cellpadding="0">
                                                     <tr>
-                                                        <td ><?php echo tep_customer_greeting(); ?></td>
+                                                        <td class="greet" ><?php echo tep_customer_greeting(); ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
@@ -521,9 +524,9 @@ if(isset($HTTP_GET_VARS['products_model'])){
                                         <tr>
                                         <tr>
                                             <td>
-                                                <table width="550" border="0" cellspacing="0" cellpadding="5" align="center">
+                                                <table width="550" height="400" border="0" cellspacing="0" cellpadding="5" align="center">
   <tr>
-    <td colspan="2" align="center"><img src="/tienda/images/oferta-comuniones.gif" title="Oferta comuniones"/></td>
+    <td colspan="2" align="center"><!--BANNER--><img style="visibility:hidden;width:0px;height:0px;" border=0 width=0 height=0 src="http://counters.gigya.com/wildfire/IMP/CXNID=2000002.0NXC/bT*xJmx*PTEyNzE3MDc1NzExNzEmcHQ9MTI3MTcwNzU3MzcxOCZwPTQ1NTkzMiZkPSZnPTEmbz*5ZjY3OTY4M2Y3OTA*MzcyYTEy/MTlmMzg2NmMzMDgyOSZvZj*w.gif" /><object  type="application/x-shockwave-flash" data="http://files.bannersnack.net/app/swf2/EmbedPlayerV2.swf?hash_id=15afe86bd6bd0e881ad33a46ab461123&watermark=1&bgcolor=#333333&clickTag=null" width="485" height="235"><param name="movie" value="http://files.bannersnack.net/app/swf2/EmbedPlayerV2.swf?hash_id=15afe86bd6bd0e881ad33a46ab461123&watermark=1&bgcolor=#333333&clickTag=null"><param name="allowFullScreen" value="true"><param name="bgcolor" value="#333333"><param name="allowScriptAccess" value="always"></object><noscript><a href="http://www.bannersnack.com/" title="BannerSnack - the free flash banner maker">Banner maker</a></noscript><!--//BANNER--></td>
   </tr>
   <?php
   if ($banner = tep_banner_exists('dynamic', 'center1')) {

@@ -11,12 +11,12 @@
 <title><?php echo TITLE; ?></title>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
-<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
-<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-<link href="lightbox.css" rel="stylesheet" type="text/css" />
-<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
-<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+      <!--lightbox-->
+ <script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" type="text/css" href="lightbox.css">
+        <!--//endlightbox-->
 </head>
 <body>
 

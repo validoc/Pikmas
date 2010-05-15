@@ -17,8 +17,8 @@ html {
 
 
 body {
-background: url(images/back-body.jpg) center -4px no-repeat;
-/*#background: transparent  url(images/back-body-ie.png) center -4px no-repeat;*/
+background: url(images/fondopantalla/fondopantalla.jpg) center -4px no-repeat;
+/*#background: transparent  url(images/fondopantalla/fondopantalla.jpg) center -4px no-repeat;*/
 color: #222;
   margin: 0px;
   padding:0px;
@@ -46,7 +46,7 @@ font-size:14px
 	position:relative
 	}
 .header { 
-background:transparent url(images/banners/bg-warpper-1.png) center 15px  no-repeat;}
+background:transparent  url(images/banners/bg-warpper-1.png)  center 15px  no-repeat; }
 
 /****************/
 /*	 FOOTER     */ 
@@ -1506,3 +1506,38 @@ font-size:13px !important;
 .banner img{
   width: 180px;
 }
+
+.infoBoxtiny {
+background:#fff}
+
+.newshomesuscriber {
+position:absolute; top:33px; left:630px; font-size:12px; color:#666666
+/*background:url(images/bg-newsletter.png) center top no-repeat;*/
+
+}
+
+.newshomesuscriber input[type="text"]{ float:left
+
+}
+
+.newshomesuscriber input[type="image"]{ float:left
+
+}
+/*.newshomesuscriber button  { height:20px; width:25px; background:url(images/sobre.png) center top no-repeat; border:none; cursor:pointer
+}
+
+.newshomesuscriber span{font-size:12px}*/
+
+.greet {
+ background:#9F7EA9;
+ color:#fff;
+ font-size:12px;
+ padding:5px
+}
+
+
+.productListing-data input[type="text"] { text-align:center}
+
+.adsearch .infobox { width:auto; background:#fff}
+
+.adsearch .boxText { background:#fff}

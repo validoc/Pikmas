@@ -9,7 +9,17 @@
 
   Released under the GNU General Public License
 */
+if (isset($_REQUEST['Num_operacion']))
+{
+           $num_operacion=$_REQUEST['Num_operacion'];
+           
+        if ($num_operacion!='')
+ 				{
+		        $pieces=split(':',$num_operacion);
+		        $_GET['osCsid']=$pieces[0];
+ 				}
 
+}
   include('includes/application_top.php');
 
 // if the customer is not logged on, redirect them to the login page
