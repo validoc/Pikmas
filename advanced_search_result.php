@@ -38,15 +38,20 @@
     if (isset($HTTP_GET_VARS['dto'])) {
       $dto = (($HTTP_GET_VARS['dto'] == DOB_FORMAT_STRING) ? '' : $HTTP_GET_VARS['dto']);
     }
+//
+//    if (isset($HTTP_GET_VARS['pfrom'])) {
+//      $pfrom = $HTTP_GET_VARS['pfrom'];
+//    }
+//
+//    if (isset($HTTP_GET_VARS['pto'])) {
+//      $pto = $HTTP_GET_VARS['pto'];
+//    }
+//
 
-    if (isset($HTTP_GET_VARS['pfrom'])) {
-      $pfrom = $HTTP_GET_VARS['pfrom'];
+    if (isset($HTTP_GET_VARS['price'])) {
+      $pfrom = 0;
+      $pto = $HTTP_GET_VARS['price'];
     }
-
-    if (isset($HTTP_GET_VARS['pto'])) {
-      $pto = $HTTP_GET_VARS['pto'];
-    }
-
     if (isset($HTTP_GET_VARS['keywords'])) {
       $keywords = $HTTP_GET_VARS['keywords'];
     }

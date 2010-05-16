@@ -212,8 +212,8 @@ $breadcrumb->add(NAVBAR_TITLE_1, tep_href_link(FILENAME_ADVANCED_SEARCH));
                           <tr>
                             <td class="fieldKey"><?php echo ENTRY_PRICE_FROM; ?></td>
                             <td class="fieldValue">
-                              <select name="price">
-                                <option value="*">Todos los precios</option>
+                              <select name="price" id="sel_price">
+                                <option value="10000">Todos los precios</option>
                                 <option value="20">Hasta 20 &euro;</option>
                                 <option value="30">Hasta 30 &euro;</option>
                                 <option value="50">Hasta 50 &euro;</option>
@@ -266,7 +266,8 @@ $breadcrumb->add(NAVBAR_TITLE_1, tep_href_link(FILENAME_ADVANCED_SEARCH));
               </tr>
             </table>
 
-            </form></td>
+            </form>
+          </td>
           <!-- body_text_eof //-->
           <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
               <!-- right_navigation //-->
