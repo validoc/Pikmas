@@ -77,7 +77,7 @@
     }
 
     if (tep_not_null($product_info['products_model'])) {
-      $products_name = $product_info['products_name'] . '<br><span class="smallText">' . $product_info['products_model'] . '</span>';
+      $products_name = $product_info['products_name'] . '<br><span class="smallText">' .  tep_image(DIR_WS_IMAGES . 'consola-'. $product_info['products_model'].'.png', $product_info['products_model'], '187', '67') . '</span>';
     } else {
       $products_name = $product_info['products_name'];
     }

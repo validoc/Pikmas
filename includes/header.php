@@ -60,17 +60,17 @@ if ($messageStack->size('header') > 0) {
                     <h1><a href="<?php echo tep_href_link('index.php') ?>" target="_parent"><img src="images/store_logo.png" border="0" title="Compra de videjuegos, cosolas, accesorios, PIKMAS todo un mundo de videojuegos" alt="Logo Pikmas"/></a></h1> <br />
                 </div>
            <div class="newshomesuscriber">     
-          <form  action="" method="get">
+          <form  action="../send_contact.php" method="post">
           <table>
           <tr>
            <td>
-                      <input  name="Noticias en tu email" value="Noticias en tu mail" onfocus="this.value='';" type="text" value="Noticias en tu mail" />
+                      <input name="email" value="Noticias en tu mail" onfocus="this.value='';" type="text" />
              </td>
              <td>
                       <input name=""  type="image" src="images/enviar.png" value="Enviar"></form>
             </td>
             </tr>
-            </table>          
+            </table>
             </div>
                       <!-- <span>Noticias en tu mail</span><br/>		 <form action="../send_contact.php" method="post" id="newsletter">
 			<label for="email"></label>
